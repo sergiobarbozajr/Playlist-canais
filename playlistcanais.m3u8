@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="band" tvg-name="Band" tvg-logo="https://mondrian.claro.com.br/channels/inverse/band.png" group-title="TV Aberta",Band
-https://8f246fdcdd11e03e7750ed4f8e050161.s25-cloudfront-net.lat/stream/41f3ad648b8590ca219cf5e28b908b0b/error.txt
+https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/chunklist.m3u8
 #EXTINF:-1 tvg-id="band-rj" tvg-name="Band RJ" tvg-logo="https://img.faz-o-eli.online/band.png" group-title="TV Aberta",Band RJ
 https://090962706ddaf124e10f22ed54380e7f.s25-cloudfront-net.lat/stream/e0d43d1f8a9278be743e6ac39bebb72a/error.txt
 #EXTINF:-1 tvg-id="band-sp" tvg-name="Band SP" tvg-logo="https://img.faz-o-eli.online/band.png" group-title="TV Aberta",Band SP
