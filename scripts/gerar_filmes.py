@@ -55,8 +55,13 @@ def video(ident):
         return None
     return f"https://archive.org/download/{urllib.parse.quote(ident)}/{urllib.parse.quote(best['name'])}"
 
+def um(v):
+    """Campos do archive.org podem vir como texto ou lista."""
+    return str(v[0] if isinstance(v, list) and v else v or "")
+
 def grupo(doc):
-    texto = " ".join([doc.get("title", "")] + (doc["subject"] if isinstance(doc.get("subject"), list) else [doc.get("subject", "")])).lower()
+    subs = doc.get("subject", [])
+    texto = " ".join([um(doc.get("title"))] + [str(x) for x in (subs if isinstance(subs, list) else [subs])]).lower()
     for chaves, g in GENEROS:
         if any(k in texto for k in chaves):
             return g
@@ -72,11 +77,11 @@ def main():
         urls = list(ex.map(lambda d: video(d["identifier"]), docs))
     linhas, n = ["#EXTM3U"], 0
     vistos = set()
-    for d, u in sorted(zip(docs, urls), key=lambda x: limpa(x[0].get("title", "")).lower()):
+    for d, u in sorted(zip(docs, urls), key=lambda x: limpa(um(x[0].get("title"))).lower()):
         if not u:
             continue
-        titulo = limpa(d.get("title", d["identifier"]))
-        ano = str(d.get("year", "")).strip()[:4]
+        titulo = limpa(um(d.get("title")) or d["identifier"])
+        ano = um(d.get("year")).strip()[:4]
         nome = f"{titulo} ({ano})" if ano.isdigit() and ano not in titulo else titulo
         if nome.lower() in vistos:
             continue
