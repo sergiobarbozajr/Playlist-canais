@@ -1,108 +1,147 @@
 #!/usr/bin/env python3
 """
-Gera series-dominio-publico.m3u8 com uma LISTA FECHADA de séries reconhecidas como domínio público
-(seriados de cinema dos anos 1930 e séries/desenhos de TV com episódios cujo copyright caducou).
-No archive.org quem envia declara a licença e muitos erram; por isso não basta o selo "public domain".
-Séries só parcialmente livres ("parcial") exigem o selo de domínio público em cada episódio.
-Cada episódio sai como "Série S01E03 - título", que o LumeStarTV agrupa em série → temporada → episódio.
+Gera series-dominio-publico.m3u8 com FONTES FIXAS, escolhidas uma a uma no Internet Archive:
+só coleções e episódios marcados como domínio público, de séries reconhecidas como livres
+(seriados de cinema dos anos 1930 e séries/desenhos de TV cujo copyright caducou).
+Cada episódio sai como "Série S01E03 - título"; o LumeStarTV agrupa em série → temporada → episódio.
+
+Tipos de fonte:
+  ("item", id)                      um item com vários vídeos (cada arquivo é um episódio)
+  ("capitulos", "id_{n}", 1, 15)    um item por capítulo, numerados
+  ("busca", "frase")                itens soltos com o selo de domínio público cujo título começa pela frase
 """
 import os, re, sys
-from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.dirname(__file__))
-from comum import busca, um, limpa, excluidos, bloqueado, mp4s, link, capa
+from comum import busca, um, limpa, excluidos, bloqueado, mp4s, link, capa, get
 
 SAIDA = "series-dominio-publico.m3u8"
-# (nome exibido, busca no título, grupo, parcial)
+TV, DES, SER = "TV clássica", "Desenhos clássicos", "Seriados de cinema"
 SERIES = [
-    # TV clássica (anos 1950–60): só os episódios marcados como domínio público
-    ("Bonanza", "Bonanza", "TV clássica", True),
-    ("The Lucy Show", "Lucy Show", "TV clássica", True),
-    ("The Beverly Hillbillies", "Beverly Hillbillies", "TV clássica", True),
-    ("The Andy Griffith Show", "Andy Griffith", "TV clássica", True),
-    ("Petticoat Junction", "Petticoat Junction", "TV clássica", True),
-    ("The Jack Benny Program", "Jack Benny", "TV clássica", True),
-    ("The George Burns and Gracie Allen Show", "Burns and Allen", "TV clássica", True),
-    ("The Adventures of Ozzie and Harriet", "Ozzie and Harriet", "TV clássica", True),
-    ("Love That Bob", "Love That Bob", "TV clássica", True),
-    ("Dragnet", "Dragnet", "TV clássica", True),
-    ("The Cisco Kid", "Cisco Kid", "TV clássica", True),
-    ("The Lone Ranger", "Lone Ranger", "TV clássica", True),
-    ("Sherlock Holmes (1954)", "Sherlock Holmes 1954", "TV clássica", True),
-    ("Four Star Playhouse", "Four Star Playhouse", "TV clássica", True),
-    ("Man with a Camera", "Man with a Camera", "TV clássica", True),
-    ("One Step Beyond", "One Step Beyond", "TV clássica", True),
-    ("Decoy", "Decoy", "TV clássica", True),
-    ("Rocky Jones, Space Ranger", "Rocky Jones", "TV clássica", True),
-    ("Captain Video", "Captain Video", "TV clássica", True),
-    ("Space Patrol", "Space Patrol", "TV clássica", True),
-    ("Tom Corbett, Space Cadet", "Tom Corbett", "TV clássica", True),
-    # Desenhos clássicos
-    ("Superman (Fleischer)", "Superman Fleischer", "Desenhos clássicos", True),
-    ("Popeye", "Popeye", "Desenhos clássicos", True),
-    ("Betty Boop", "Betty Boop", "Desenhos clássicos", True),
-    ("Felix the Cat", "Felix the Cat", "Desenhos clássicos", True),
-    ("Casper", "Casper", "Desenhos clássicos", True),
-    ("Little Lulu", "Little Lulu", "Desenhos clássicos", True),
-    # Seriados de cinema dos anos 1930 (estúdios independentes, domínio público)
-    ("The Phantom Creeps", "Phantom Creeps", "Seriados de cinema", False),
-    ("The Lost City", "Lost City 1935", "Seriados de cinema", False),
-    ("The Return of Chandu", "Return of Chandu", "Seriados de cinema", False),
-    ("The Clutching Hand", "Clutching Hand", "Seriados de cinema", False),
-    ("The Miracle Rider", "Miracle Rider", "Seriados de cinema", False),
-    ("The Phantom Empire", "Phantom Empire", "Seriados de cinema", False),
-    ("Shadow of Chinatown", "Shadow of Chinatown", "Seriados de cinema", False),
-    ("The Hurricane Express", "Hurricane Express", "Seriados de cinema", False),
-    ("The Whispering Shadow", "Whispering Shadow", "Seriados de cinema", False),
-    ("The Galloping Ghost", "Galloping Ghost", "Seriados de cinema", False),
-    ("The Lightning Warrior", "Lightning Warrior", "Seriados de cinema", False),
-    ("Mystery Mountain", "Mystery Mountain", "Seriados de cinema", False),
-    ("Burn 'Em Up Barnes", "Burn Em Up Barnes", "Seriados de cinema", False),
-    ("Custer's Last Stand", "Custer's Last Stand serial", "Seriados de cinema", False),
-    ("The Black Coin", "Black Coin", "Seriados de cinema", False),
-    ("Fighting with Kit Carson", "Fighting with Kit Carson", "Seriados de cinema", False),
+    ("Bonanza", TV, ("item", "Bonanza_pd")),
+    ("The Beverly Hillbillies", TV, ("item", "bevhill-s01e01-36")),
+    ("Petticoat Junction", TV, ("item", "petticoatjunction_20170809")),
+    ("The George Burns and Gracie Allen Show", TV, ("item", "pdburnsallen")),
+    ("The Cisco Kid", TV, ("item", "TheCiscoKidpublicdomain")),
+    ("The Lone Ranger", TV, ("item", "theloneranger_201705")),
+    ("Sherlock Holmes (1954)", TV, ("item", "SherlockHolmes1954")),
+    ("Four Star Playhouse", TV, ("item", "FourStarPlayhouse-48Episodes")),
+    ("Man with a Camera", TV, ("item", "manwithacamera_202002")),
+    ("Captain Video", TV, ("item", "CaptainVideoMisc4")),
+    ("Dragnet", TV, ("busca", "dragnet")),
+    ("The Jack Benny Program", TV, ("busca", "jack benny")),
+    ("The Adventures of Ozzie and Harriet", TV, ("busca", "ozzie and harriet")),
+    ("One Step Beyond", TV, ("busca", "one step beyond")),
+    ("Decoy", TV, ("busca", "decoy")),
+    ("The Lucy Show", TV, ("busca", "the lucy show")),
+    ("Superman (Fleischer)", DES, ("item", "MaxFleischerSuperman")),
+    ("Little Lulu", DES, ("item", "littlelulu-publicdomain")),
+    ("Popeye", DES, ("busca", "popeye")),
+    ("Betty Boop", DES, ("busca", "betty boop")),
+    ("Felix the Cat", DES, ("busca", "felix the cat")),
+    ("The Phantom Creeps", SER, ("capitulos", "the_phantom_creeps_ep{n}", 1, 12)),
+    ("The Lost City", SER, ("item", "TheLostCityall12ChaptersVideoQualityUpgrade")),
+    ("The Return of Chandu", SER, ("capitulos", "the_return_of_chandu_chapter_{n}", 1, 12)),
+    ("The Clutching Hand", SER, ("capitulos", "clutching_hand_ep{n}", 1, 15)),
+    ("The Miracle Rider", SER, ("capitulos", "MiracleRider{n}", 1, 15)),
+    ("The Phantom Empire", SER, ("item", "PhantomEmpire1")),
+    ("Shadow of Chinatown", SER, ("capitulos", "shadow_of_chinatown_ep{n}", 1, 15)),
+    ("The Hurricane Express", SER, ("item", "the-hurricane-express")),
+    ("The Whispering Shadow", SER, ("capitulos", "whispering_shadow_ep{n}", 1, 12)),
+    ("The Lightning Warrior", SER, ("item", "RTTLW01")),
+    ("Burn 'Em Up Barnes", SER, ("capitulos", "burn_em_up_barnes_{n}", 1, 12)),
+    ("Fighting with Kit Carson", SER, ("capitulos", "FightingWithKitCarson{n}", 1, 12)),
 ]
-PD = "(licenseurl:*publicdomain* OR licenseurl:*creativecommons*)"
-EP_RX = re.compile(r"(?:\bS(\d{1,2})\s*E(\d{1,3})\b|season\s*(\d{1,2}).{0,12}?(?:episode|ep\.?)\s*(\d{1,3})|(?:episode|ep\.?|chapter|cap[ií]tulo|part|#)\s*(\d{1,3}))", re.I)
+SE_RX = re.compile(r"(?<![a-z0-9])S(\d{1,2})\s*[ ._-]?\s*E(\d{1,3})(?!\d)", re.I)
+SOLTO_RX = re.compile(r"(?<![a-z0-9])(\d{1,3})(?![0-9])", re.I)
+NUM_RX = re.compile(r"(?:episode|ep\.?|chapter|chap\.?|part|cap[ií]tulo|#)\s*(\d{1,3})", re.I)
 
-def numero(texto):
-    m = EP_RX.search(texto)
-    if not m:
-        return None, None
-    g = m.groups()
-    if g[0]: return int(g[0]), int(g[1])
-    if g[2]: return int(g[2]), int(g[3])
-    return 1, int(g[4])
+def natural(s):
+    return [int(x) if x.isdigit() else x.lower() for x in re.split(r"(\d+)", s)]
 
-def palavras(busca_titulo):
-    return [w for w in re.findall(r"[a-z0-9']+", busca_titulo.lower()) if w not in ("the", "of", "and", "serial") and not re.fullmatch(r"19\d\d", w)]
+def numero(texto, solto=False):
+    m = SE_RX.search(texto)
+    if m: return int(m.group(1)), int(m.group(2))
+    m = NUM_RX.search(texto)
+    if m: return 1, int(m.group(1))
+    if solto:  # nome de arquivo: "Sherlock Holmes 01 ...", "TLC-01", "Phantom Empire - 1"
+        m = SOLTO_RX.search(texto.replace("_", " "))
+        if m and 0 < int(m.group(1)) < 300: return 1, int(m.group(1))
+        m = re.search(r"(\d{1,3})$", texto)
+        if m and 0 < int(m.group(1)) < 300: return 1, int(m.group(1))
+    return None, None
 
-def coleta(item):
-    nome, termo, grupo, parcial = item
-    ws = palavras(termo)
-    q = "mediatype:movies AND " + " AND ".join(f"title:({w})" for w in ws)
-    if parcial:
-        q += " AND " + PD
-    docs = busca(q, 400)
-    fora = excluidos()
+def titulo_ep(texto, nome):
+    t = texto.replace("_", " ")
+    t = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", t)  # camelCase de arquivo: jedPlaysSolomon → jed Plays Solomon
+    t = re.sub(r"\.(ia|mp4)$", "", t, flags=re.I)
+    t = SE_RX.sub(" ", t)
+    t = re.sub(r"(?i)(the\s+)?" + re.escape(re.sub(r"(?i)^the\s+", "", nome.split(" (")[0])), " ", t)
+    t = re.sub(r"(?i)\b(the|ep\.?|episode|chapter|chap|part)\s*\d*\b\s*[-:]?", lambda m: " " if re.search(r"\d", m.group(0)) or m.group(1).lower() != "the" else m.group(0), t)
+    t = re.sub(r"\b\d{1,3}\b\s*[-:]?\s*$|^\s*\d{1,3}\s*[-:.]?\s*", " ", t)
+    t = limpa(re.sub(r"[_\s]+", " ", t)).strip(" -:'\"")
+    return t if len(t) >= 4 and t.lower() not in ("tlc",) else ""
+
+def de_item(nome, ident):
+    vs = sorted(mp4s(ident), key=lambda x: natural(x[0]))
     eps = []
-    logo = ""
+    for i, (base, arq) in enumerate(vs, 1):
+        arqnome = base.split("/")[-1]
+        s, e = numero(arqnome, solto=True)
+        eps.append((s, e, titulo_ep(arqnome, nome) or f"Episódio {e or i}", link(ident, arq)))
+    return eps, capa(ident)
+
+def de_capitulos(nome, padrao, a, b):
+    eps, logo = [], ""
+    def um_cap(n):
+        ident = padrao.format(n=n)
+        try:
+            meta = get(f"https://archive.org/metadata/{ident}")
+        except Exception:
+            return None
+        vs = mp4s(ident)
+        if not vs:
+            return None
+        t = um(meta.get("metadata", {}).get("title"))
+        resto = re.split(r"(?i)chapter\s*\d+\s*[-:]?\s*", t, maxsplit=1)
+        return (1, n, limpa(resto[1]) if len(resto) > 1 else f"Capítulo {n}", link(ident, vs[0][1]), ident)
+    with ThreadPoolExecutor(6) as ex:
+        for r in ex.map(um_cap, range(a, b + 1)):
+            if r:
+                eps.append(r[:4]); logo = logo or capa(r[4])
+    return eps, logo
+
+def de_busca(nome, frase):
+    docs = busca(f'mediatype:movies AND title:("{frase}") AND (licenseurl:*publicdomain* OR licenseurl:*creativecommons*)', 200)
+    fora = excluidos(); eps, logo, vistos = [], "", set()
     for d in docs:
-        titulo = limpa(um(d.get("title")) or d["identifier"])
-        if bloqueado(titulo, fora) or re.search(r"\b(trailer|promo|commercial|blooper|documentary|tribute)\b", titulo, re.I):
+        t = limpa(um(d.get("title")))
+        tl = re.sub(r"^[\s'\"]+", "", t.lower()).replace("_", " ")
+        if not (tl.startswith(frase) or tl.startswith("the " + frase)) or bloqueado(t, fora):
+            continue
+        if re.search(r"\b(trailer|promo|commercial|blooper|documentary|tribute|capcut|tiktok|template)\b", tl):
             continue
         vs = mp4s(d["identifier"])
-        if not vs:
+        if len(vs) != 1:
             continue
+        ep = titulo_ep(t, nome) or t
+        k = re.sub(r"[^a-z0-9]", "", ep.lower())
+        if k in vistos:
+            continue
+        vistos.add(k)
+        s, e = numero(t)
+        eps.append((s, e, ep, link(d["identifier"], vs[0][1])))
         logo = logo or capa(d["identifier"])
-        if len(vs) > 1:  # item com vários episódios: cada arquivo é um episódio
-            for i, (base, arq) in enumerate(vs, 1):
-                s, e = numero(base.replace("_", " "))
-                eps.append((s, e, limpa(base.split("/")[-1].replace("_", " ")), link(d["identifier"], arq)))
-        else:
-            s, e = numero(titulo)
-            resto = re.sub(r"(?i)^.*?" + re.escape(ws[-1]) + r"[^a-z0-9]*", "", titulo) if ws else titulo
-            eps.append((s, e, limpa(resto) or titulo, link(d["identifier"], vs[0][1])))
+    return eps, logo
+
+def coleta(item):
+    nome, grupo, fonte = item
+    try:
+        if fonte[0] == "item": eps, logo = de_item(nome, fonte[1])
+        elif fonte[0] == "capitulos": eps, logo = de_capitulos(nome, *fonte[1:])
+        else: eps, logo = de_busca(nome, fonte[1])
+    except Exception as ex:
+        print(f"{nome}: erro {ex}"); eps, logo = [], ""
     return nome, grupo, logo, eps
 
 def main():
@@ -110,25 +149,24 @@ def main():
         res = list(ex.map(coleta, SERIES))
     linhas, n_series, n_eps = ["#EXTM3U"], 0, 0
     for nome, grupo, logo, eps in res:
-        uni, vistos = [], set()
-        for ep in eps:
-            if ep[3] not in vistos:
-                vistos.add(ep[3]); uni.append(ep)
-        print(f"{nome}: {len(uni)} episódios")
-        if len(uni) < 2:
+        print(f"{nome}: {len(eps)} episódios")
+        if len(eps) < 3:
             continue
-        usados = {(s, e) for s, e, _, _ in uni if s and e}
-        prox, final = 1, []
-        for s, e, t, u in uni:
-            if not (s and e) or (s, e) in [(x[0], x[1]) for x in final]:
+        # numeração: usa SxxEyy/capítulo quando houver e não repetir; senão a ordem da coleção
+        final, usados = [], set()
+        for s, e, t, u in eps:
+            if s and e and (s, e) not in usados:
+                usados.add((s, e)); final.append((s, e, t, u))
+        prox = 1
+        for s, e, t, u in eps:
+            if not (s and e and any(f[3] == u for f in final)):
                 while (1, prox) in usados: prox += 1
-                s, e = 1, prox
-            usados.add((s, e)); final.append((s, e, t, u))
-        final.sort()
+                usados.add((1, prox)); final.append((1, prox, t, u))
+        final.sort(key=lambda x: (x[0], x[1]))
         n_series += 1
         for s, e, t, u in final:
             extra = f" - {t}" if t and t.lower() != nome.lower() else ""
-            rotulo = f"{nome} S{s:02d}E{e:02d}{extra}"[:160]
+            rotulo = f"{nome} S{s:02d}E{e:02d}{extra}"[:150]
             linhas.append(f'#EXTINF:-1 tvg-name="{rotulo}" tvg-logo="{logo}" group-title="Séries Domínio Público · {grupo}",{rotulo}')
             linhas.append(u)
             n_eps += 1
