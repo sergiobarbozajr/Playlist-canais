@@ -3,7 +3,7 @@ name: Listas de filmes e séries de domínio público
 on:
   workflow_dispatch:
   push:
-    paths: ["scripts/**", ".github/workflows/filmes.yml"]
+    paths: ["scripts/gerar_*.py", "scripts/comum.py", "excluir.txt", ".github/workflows/filmes.yml"]
   schedule:
     - cron: "17 9 * * 1"   # toda segunda, 06:17 (Brasília)
 
