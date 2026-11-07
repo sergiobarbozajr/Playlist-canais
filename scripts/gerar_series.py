@@ -28,7 +28,7 @@ SERIES = [
     ("Four Star Playhouse", TV, ("item", "FourStarPlayhouse-48Episodes")),
     ("Man with a Camera", TV, ("item", "manwithacamera_202002")),
     ("Captain Video", TV, ("item", "CaptainVideoMisc4")),
-    ("Dragnet", TV, ("busca", "dragnet")),
+    ("Dragnet", TV, ("busca", "dragnet", r"\bthe big\b")),
     ("The Jack Benny Program", TV, ("busca", "jack benny")),
     ("The Adventures of Ozzie and Harriet", TV, ("busca", "ozzie and harriet")),
     ("One Step Beyond", TV, ("busca", "one step beyond")),
@@ -76,11 +76,15 @@ def titulo_ep(texto, nome):
     t = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", t)  # camelCase de arquivo: jedPlaysSolomon → jed Plays Solomon
     t = re.sub(r"\.(ia|mp4)$", "", t, flags=re.I)
     t = SE_RX.sub(" ", t)
-    t = re.sub(r"(?i)(the\s+)?" + re.escape(re.sub(r"(?i)^the\s+", "", nome.split(" (")[0])), " ", t)
+    serie = re.escape(re.sub(r"(?i)^the\s+", "", nome.split(" (")[0]))
+    sem = re.sub(r"(?i)^\W*(the\s+)?" + serie + r"\W*", "", t.strip())
+    if not re.match(r"(?i)(for|in|and|the sailor|meets|'s|s\b|vs|with|on|at)\b", sem):
+        t = sem
+    t = t.replace("â", " ")
     t = re.sub(r"(?i)\b(the|ep\.?|episode|chapter|chap|part)\s*\d*\b\s*[-:]?", lambda m: " " if re.search(r"\d", m.group(0)) or m.group(1).lower() != "the" else m.group(0), t)
     t = re.sub(r"\b\d{1,3}\b\s*[-:]?\s*$|^\s*\d{1,3}\s*[-:.]?\s*", " ", t)
     t = limpa(re.sub(r"[_\s]+", " ", t)).strip(" -:'\"")
-    return t if len(t) >= 4 and t.lower() not in ("tlc",) else ""
+    return t if len(t) >= 4 and not re.fullmatch(r"(?i)[a-z]{2,6}\d{1,3}|tlc|misc|episode", t) else ""
 
 def de_item(nome, ident):
     vs = sorted(mp4s(ident), key=lambda x: natural(x[0]))
@@ -104,14 +108,14 @@ def de_capitulos(nome, padrao, a, b):
             return None
         t = um(meta.get("metadata", {}).get("title"))
         resto = re.split(r"(?i)chapter\s*\d+\s*[-:]?\s*", t, maxsplit=1)
-        return (1, n, limpa(resto[1]) if len(resto) > 1 else f"Capítulo {n}", link(ident, vs[0][1]), ident)
+        return (1, n, (limpa(resto[1]) if len(resto) > 1 else "") or f"Capítulo {n}", link(ident, vs[0][1]), ident)
     with ThreadPoolExecutor(6) as ex:
         for r in ex.map(um_cap, range(a, b + 1)):
             if r:
                 eps.append(r[:4]); logo = logo or capa(r[4])
     return eps, logo
 
-def de_busca(nome, frase):
+def de_busca(nome, frase, exige=None):
     docs = busca(f'mediatype:movies AND title:("{frase}") AND (licenseurl:*publicdomain* OR licenseurl:*creativecommons*)', 200)
     fora = excluidos(); eps, logo, vistos = [], "", set()
     for d in docs:
@@ -119,7 +123,12 @@ def de_busca(nome, frase):
         tl = re.sub(r"^[\s'\"]+", "", t.lower()).replace("_", " ")
         if not (tl.startswith(frase) or tl.startswith("the " + frase)) or bloqueado(t, fora):
             continue
-        if re.search(r"\b(trailer|promo|commercial|blooper|documentary|tribute|capcut|tiktok|template)\b", tl):
+        if re.search(r"\b(trailer|promo|commercial|blooper|documentary|tribute|capcut|tiktok|template|version|thailand|remake)\b|\b(198\d|199\d|20\d\d)\b", tl):
+            continue
+        if exige and not re.search(exige, tl):
+            continue
+        ano = um(d.get("year"))[:4]
+        if ano.isdigit() and int(ano) > 1975:
             continue
         vs = mp4s(d["identifier"])
         if len(vs) != 1:
@@ -139,7 +148,7 @@ def coleta(item):
     try:
         if fonte[0] == "item": eps, logo = de_item(nome, fonte[1])
         elif fonte[0] == "capitulos": eps, logo = de_capitulos(nome, *fonte[1:])
-        else: eps, logo = de_busca(nome, fonte[1])
+        else: eps, logo = de_busca(nome, *fonte[1:])
     except Exception as ex:
         print(f"{nome}: erro {ex}"); eps, logo = [], ""
     return nome, grupo, logo, eps
