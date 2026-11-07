@@ -1,10 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ia-neath_brooklyn_bridge" tvg-name="'Neath Brooklyn Bridge (1942)" tvg-logo="https://archive.org/services/img/neath_brooklyn_bridge" group-title="Domínio Público · Comédia",'Neath Brooklyn Bridge (1942)
-https://archive.org/download/neath_brooklyn_bridge/neath_the_brooklyn_bridge.mp4
+https://archive.org/download/neath_brooklyn_bridge/neath_brooklyn_bridge.mp4
 #EXTINF:-1 tvg-id="ia-Mommartz_Weg_zum_Nachbarn_1968" tvg-name="1968 Weg zum Nachbarn (Way to the Neighbour)" tvg-logo="https://archive.org/services/img/Mommartz_Weg_zum_Nachbarn_1968" group-title="Domínio Público · Clássicos",1968 Weg zum Nachbarn (Way to the Neighbour)
 https://archive.org/download/Mommartz_Weg_zum_Nachbarn_1968/1968WegZumNachbarn.mp4
-#EXTINF:-1 tvg-id="ia-Mommartz_Altersporno_1970" tvg-name="1970 Altersporno (Old Age Porn)" tvg-logo="https://archive.org/services/img/Mommartz_Altersporno_1970" group-title="Domínio Público · Clássicos",1970 Altersporno (Old Age Porn)
-https://archive.org/download/Mommartz_Altersporno_1970/1970_Altersporno_ENGL.mp4
 #EXTINF:-1 tvg-id="ia-FLUEGELSCHLAGEN" tvg-name="1975 Flügelschlagen (wing flapping)" tvg-logo="https://archive.org/services/img/FLUEGELSCHLAGEN" group-title="Domínio Público · Clássicos",1975 Flügelschlagen (wing flapping)
 https://archive.org/download/FLUEGELSCHLAGEN/1975FlugelschlagenTeil1DerTrilogieMehrAlsZwei.movAvp2048x1556422Hq2552Min.mp4
 #EXTINF:-1 tvg-id="ia-20000LeaguesUndertheSea" tvg-name="20 -000 Leagues Under the Sea (1916)" tvg-logo="https://archive.org/services/img/20000LeaguesUndertheSea" group-title="Domínio Público · Cinema mudo",20 -000 Leagues Under the Sea (1916)
@@ -13,10 +11,8 @@ https://archive.org/download/20000LeaguesUndertheSea/20000_Leagues_Under_the_Sea
 https://archive.org/download/bride_for_henry_ipod/bride_for_henry.mp4
 #EXTINF:-1 tvg-id="ia-ABucketofBlood" tvg-name="A Bucket of Blood" tvg-logo="https://archive.org/services/img/ABucketofBlood" group-title="Domínio Público · Clássicos",A Bucket of Blood
 https://archive.org/download/ABucketofBlood/Bucket_1959.mp4
-#EXTINF:-1 tvg-id="ia-ABucketOfBlood1959" tvg-name="A Bucket of Blood (1959)" tvg-logo="https://archive.org/services/img/ABucketOfBlood1959" group-title="Domínio Público · Clássicos",A Bucket of Blood (1959)
-https://archive.org/download/ABucketOfBlood1959/A_Bucket_Of_Blood.mp4
-#EXTINF:-1 tvg-id="ia-AChristmasCarol" tvg-name="A Christmas Carol (1910)" tvg-logo="https://archive.org/services/img/AChristmasCarol" group-title="Domínio Público · Cinema mudo",A Christmas Carol (1910)
-https://archive.org/download/AChristmasCarol/AChristmasCarol.mp4
+#EXTINF:-1 tvg-id="ia-AChristmasCarol1910" tvg-name="A Christmas Carol (1910)" tvg-logo="https://archive.org/services/img/AChristmasCarol1910" group-title="Domínio Público · Cinema mudo",A Christmas Carol (1910)
+https://archive.org/download/AChristmasCarol1910/A-Christmas-Carol--1910.mp4
 #EXTINF:-1 tvg-id="ia-ACloseCallForBostonBlackie" tvg-name="A Close Call for Boston Blackie (1946)" tvg-logo="https://archive.org/services/img/ACloseCallForBostonBlackie" group-title="Domínio Público · Suspense e policial",A Close Call for Boston Blackie (1946)
 https://archive.org/download/ACloseCallForBostonBlackie/ACloseCallForBostonBlackie.mp4
 #EXTINF:-1 tvg-id="ia-A_Man_Betrayed_movie" tvg-name="A Man Betrayed (1936)" tvg-logo="https://archive.org/services/img/A_Man_Betrayed_movie" group-title="Domínio Público · Clássicos",A Man Betrayed (1936)
@@ -50,7 +46,7 @@ https://archive.org/download/Algiers_/Algiers.mp4
 #EXTINF:-1 tvg-id="ia-alias_john_law" tvg-name="Alias John Law (1935)" tvg-logo="https://archive.org/services/img/alias_john_law" group-title="Domínio Público · Faroeste",Alias John Law (1935)
 https://archive.org/download/alias_john_law/alias_john_law.mp4
 #EXTINF:-1 tvg-id="ia-AliceInWonderland1915_503" tvg-name="Alice In Wonderland (1915)" tvg-logo="https://archive.org/services/img/AliceInWonderland1915_503" group-title="Domínio Público · Cinema mudo",Alice In Wonderland (1915)
-https://archive.org/download/AliceInWonderland1915_503/AliceInWonderland-WithAudio_512kb.mp4
+https://archive.org/download/AliceInWonderland1915_503/AliceInWonderland-Silent_512kb.mp4
 #EXTINF:-1 tvg-id="ia-AlicesWonderland" tvg-name="Alice's Wonderland" tvg-logo="https://archive.org/services/img/AlicesWonderland" group-title="Domínio Público · Cinema mudo",Alice's Wonderland
 https://archive.org/download/AlicesWonderland/AlicesWonderland_512kb.mp4
 #EXTINF:-1 tvg-id="ia-amazing_mr_x" tvg-name="Amazing Mr. X  - The (1948)" tvg-logo="https://archive.org/services/img/amazing_mr_x" group-title="Domínio Público · Suspense e policial",Amazing Mr. X  - The (1948)
@@ -59,8 +55,6 @@ https://archive.org/download/amazing_mr_x/amazing_mr_x.mp4
 https://archive.org/download/american_empire/american_empire.mp4
 #EXTINF:-1 tvg-id="ia-angel_and_the_badman" tvg-name="Angel and the Badman (1947)" tvg-logo="https://archive.org/services/img/angel_and_the_badman" group-title="Domínio Público · Faroeste",Angel and the Badman (1947)
 https://archive.org/download/angel_and_the_badman/angel_and_the_badman.mp4
-#EXTINF:-1 tvg-id="ia-AngelAndTheBadManVideoQualityUpgrade" tvg-name="ANGEL AND THE BADMAN video quality upgrade" tvg-logo="https://archive.org/services/img/AngelAndTheBadManVideoQualityUpgrade" group-title="Domínio Público · Faroeste",ANGEL AND THE BADMAN video quality upgrade
-https://archive.org/download/AngelAndTheBadManVideoQualityUpgrade/AngelAndTheBadManVideoQualityUpgrade.mp4
 #EXTINF:-1 tvg-id="ia-angel_on_my_shoulder" tvg-name="Angel on My Shoulder (1946)" tvg-logo="https://archive.org/services/img/angel_on_my_shoulder" group-title="Domínio Público · Comédia",Angel on My Shoulder (1946)
 https://archive.org/download/angel_on_my_shoulder/angel_on_my_shoulder.mp4
 #EXTINF:-1 tvg-id="ia-Apache_Blood" tvg-name="Apache Blood (1975)" tvg-logo="https://archive.org/services/img/Apache_Blood" group-title="Domínio Público · Faroeste",Apache Blood (1975)
@@ -85,8 +79,6 @@ https://archive.org/download/AtlanticFlight/AtlanticFlight.mp4
 https://archive.org/download/AtomAgeVampire/AtomAgeVampire.mp4
 #EXTINF:-1 tvg-id="ia-Attack_From_Space" tvg-name="Attack From Space (1959)" tvg-logo="https://archive.org/services/img/Attack_From_Space" group-title="Domínio Público · Ficção científica",Attack From Space (1959)
 https://archive.org/download/Attack_From_Space/Attack_From_Space.mp4
-#EXTINF:-1 tvg-id="ia-attack_from_space_ipod" tvg-name="Attack from Space (1964)" tvg-logo="https://archive.org/services/img/attack_from_space_ipod" group-title="Domínio Público · Ficção científica",Attack from Space (1964)
-https://archive.org/download/attack_from_space_ipod/attack_from_space.mp4
 #EXTINF:-1 tvg-id="ia-cco_attackofthegiantleeches" tvg-name="Attack of the Giant Leeches (1959)" tvg-logo="https://archive.org/services/img/cco_attackofthegiantleeches" group-title="Domínio Público · Terror",Attack of the Giant Leeches (1959)
 https://archive.org/download/cco_attackofthegiantleeches/ccoPublicDomainAttack_of_the_Giant_Leeches.mp4
 #EXTINF:-1 tvg-id="ia-Attack_of_the_Monsters" tvg-name="Attack of the Monsters (1969)" tvg-logo="https://archive.org/services/img/Attack_of_the_Monsters" group-title="Domínio Público · Terror",Attack of the Monsters (1969)
@@ -183,8 +175,6 @@ https://archive.org/download/captain_calamity/captain_calamity.mp4
 https://archive.org/download/CaptainKidd_/CaptainKidd.mp4
 #EXTINF:-1 tvg-id="ia-CarnivalofSouls" tvg-name="Carnival of Souls (1962)" tvg-logo="https://archive.org/services/img/CarnivalofSouls" group-title="Domínio Público · Terror",Carnival of Souls (1962)
 https://archive.org/download/CarnivalofSouls/CarnivalOfSouls.mp4
-#EXTINF:-1 tvg-id="ia-CarnivalOfSoulsVideoQualityUpgrade" tvg-name="CARNIVAL OF SOULS video quality upgrade" tvg-logo="https://archive.org/services/img/CarnivalOfSoulsVideoQualityUpgrade" group-title="Domínio Público · Terror",CARNIVAL OF SOULS video quality upgrade
-https://archive.org/download/CarnivalOfSoulsVideoQualityUpgrade/CarnivalOfSoulsVideoUpgrade.mp4
 #EXTINF:-1 tvg-id="ia-cause_for_alarm_1951" tvg-name="Cause for Alarm! (1951)" tvg-logo="https://archive.org/services/img/cause_for_alarm_1951" group-title="Domínio Público · Drama e romance",Cause for Alarm! (1951)
 https://archive.org/download/cause_for_alarm_1951/cause_for_alarm_1951.mp4
 #EXTINF:-1 tvg-id="ia-cavalcade_of_the_west" tvg-name="Cavalcade of the West (1936)" tvg-logo="https://archive.org/services/img/cavalcade_of_the_west" group-title="Domínio Público · Faroeste",Cavalcade of the West (1936)
@@ -292,15 +282,11 @@ https://archive.org/download/dead_people_ipod/dead_people.mp4
 #EXTINF:-1 tvg-id="ia-DeathRage" tvg-name="Death Rage (1976)" tvg-logo="https://archive.org/services/img/DeathRage" group-title="Domínio Público · Suspense e policial",Death Rage (1976)
 https://archive.org/download/DeathRage/DeathRage.mp4
 #EXTINF:-1 tvg-id="ia-Decay2012-TheLhcZombieFilmfullFilm" tvg-name="Decay (2012) - The LHC Zombie Film [full film]" tvg-logo="https://archive.org/services/img/Decay2012-TheLhcZombieFilmfullFilm" group-title="Domínio Público · Terror",Decay (2012) - The LHC Zombie Film [full film]
-https://archive.org/download/Decay2012-TheLhcZombieFilmfullFilm/Decay_2012_Low.mp4
+https://archive.org/download/Decay2012-TheLhcZombieFilmfullFilm/Decay_2012_720p.mp4
 #EXTINF:-1 tvg-id="ia-Destroy_All_Planets" tvg-name="Destroy All Planets (1968)" tvg-logo="https://archive.org/services/img/Destroy_All_Planets" group-title="Domínio Público · Ficção científica",Destroy All Planets (1968)
 https://archive.org/download/Destroy_All_Planets/Destroy_All_Planets.mp4
 #EXTINF:-1 tvg-id="ia-Detour" tvg-name="Detour (1945)" tvg-logo="https://archive.org/services/img/Detour" group-title="Domínio Público · Suspense e policial",Detour (1945)
 https://archive.org/download/Detour/Detour.mp4
-#EXTINF:-1 tvg-id="ia-DiaryofaNudist" tvg-name="Diary of a Nudist (1961)" tvg-logo="https://archive.org/services/img/DiaryofaNudist" group-title="Domínio Público · Drama e romance",Diary of a Nudist (1961)
-https://archive.org/download/DiaryofaNudist/DiaryofaNudist.mp4
-#EXTINF:-1 tvg-id="ia-DiaryOfANudistwidescreen" tvg-name="Diary Of A Nudist (widescreen) (2015)" tvg-logo="https://archive.org/services/img/DiaryOfANudistwidescreen" group-title="Domínio Público · Clássicos",Diary Of A Nudist (widescreen) (2015)
-https://archive.org/download/DiaryOfANudistwidescreen/Diary%20of%20a%20Nudist%20%28widescreen%29.mp4
 #EXTINF:-1 tvg-id="ia-dick_tracy_detctive" tvg-name="Dick Tracy Detective (1945)" tvg-logo="https://archive.org/services/img/dick_tracy_detctive" group-title="Domínio Público · Suspense e policial",Dick Tracy Detective (1945)
 https://archive.org/download/dick_tracy_detctive/dick_tracy_detective.mp4
 #EXTINF:-1 tvg-id="ia-dick_tracys_dilemma" tvg-name="Dick Tracy's Dilemma (1947)" tvg-logo="https://archive.org/services/img/dick_tracys_dilemma" group-title="Domínio Público · Suspense e policial",Dick Tracy's Dilemma (1947)
@@ -317,12 +303,6 @@ https://archive.org/download/Doomed_to_Die_1940/Doomed_to_Die.mp4
 https://archive.org/download/DoomsdayMachine1972/DoomsdayMachine1972.mp4
 #EXTINF:-1 tvg-id="ia-double_exposure" tvg-name="Double Exposure (1944)" tvg-logo="https://archive.org/services/img/double_exposure" group-title="Domínio Público · Clássicos",Double Exposure (1944)
 https://archive.org/download/double_exposure/double_exposure.mp4
-#EXTINF:-1 tvg-id="ia-DoubleFeatureHell2theGrindhouseExperience" tvg-name="DOUBLE FEATURE HELL 2 (the grindhouse experience)." tvg-logo="https://archive.org/services/img/DoubleFeatureHell2theGrindhouseExperience" group-title="Domínio Público · Clássicos",DOUBLE FEATURE HELL 2 (the grindhouse experience).
-https://archive.org/download/DoubleFeatureHell2theGrindhouseExperience/DoubleFeatureHell2theGrindhouseExperience.mp4
-#EXTINF:-1 tvg-id="ia-DoubleFeatureHell6grindhouse2" tvg-name="DOUBLE FEATURE HELL 6 (Grindhouse 2)" tvg-logo="https://archive.org/services/img/DoubleFeatureHell6grindhouse2" group-title="Domínio Público · Clássicos",DOUBLE FEATURE HELL 6 (Grindhouse 2)
-https://archive.org/download/DoubleFeatureHell6grindhouse2/DoubleFeatureHell6grindhouse2.mp4
-#EXTINF:-1 tvg-id="ia-DoubleFeatureHell8grindhouse3" tvg-name="DOUBLE FEATURE HELL 8 (Grindhouse 3)" tvg-logo="https://archive.org/services/img/DoubleFeatureHell8grindhouse3" group-title="Domínio Público · Clássicos",DOUBLE FEATURE HELL 8 (Grindhouse 3)
-https://archive.org/download/DoubleFeatureHell8grindhouse3/DoubleFeatureHell8grindhouse3.mp4
 #EXTINF:-1 tvg-id="ia-DrJekyllandMrHyde" tvg-name="Dr. Jekyll and Mr. Hyde (1920)" tvg-logo="https://archive.org/services/img/DrJekyllandMrHyde" group-title="Domínio Público · Terror",Dr. Jekyll and Mr. Hyde (1920)
 https://archive.org/download/DrJekyllandMrHyde/DrJekyllandMrHyde_512kb.mp4
 #EXTINF:-1 tvg-id="ia-dressed_to_kill" tvg-name="Dressed To Kill (1946)" tvg-logo="https://archive.org/services/img/dressed_to_kill" group-title="Domínio Público · Suspense e policial",Dressed To Kill (1946)
@@ -350,7 +330,7 @@ https://archive.org/download/fatal_hour/fatal_hour.mp4
 #EXTINF:-1 tvg-id="ia-Fear_in_the_Night" tvg-name="Fear in the Night (1947)" tvg-logo="https://archive.org/services/img/Fear_in_the_Night" group-title="Domínio Público · Suspense e policial",Fear in the Night (1947)
 https://archive.org/download/Fear_in_the_Night/Fear_in_the_Night.mp4
 #EXTINF:-1 tvg-id="ia-Fed_Up_Genetic_Engineering" tvg-name="Fed Up! Genetic Engineering - Industrial Agriculture - and Sustainable Alternatives" tvg-logo="https://archive.org/services/img/Fed_Up_Genetic_Engineering" group-title="Domínio Público · Clássicos",Fed Up! Genetic Engineering - Industrial Agriculture - and Sustainable Alternatives
-https://archive.org/download/Fed_Up_Genetic_Engineering/VTS_04_1.mp4
+https://archive.org/download/Fed_Up_Genetic_Engineering/VTS_01_1.mp4
 #EXTINF:-1 tvg-id="ia-FightingCaravans1931_368" tvg-name="Fighting Caravans (1931)" tvg-logo="https://archive.org/services/img/FightingCaravans1931_368" group-title="Domínio Público · Guerra",Fighting Caravans (1931)
 https://archive.org/download/FightingCaravans1931_368/FightingCaravans1931.mp4
 #EXTINF:-1 tvg-id="ia-FirstSpaceshipOnVenusMPEG" tvg-name="First Spaceship on Venus (1960)" tvg-logo="https://archive.org/services/img/FirstSpaceshipOnVenusMPEG" group-title="Domínio Público · Ficção científica",First Spaceship on Venus (1960)
@@ -363,8 +343,6 @@ https://archive.org/download/flight_to_nowhere/flight_to_nowhere.mp4
 https://archive.org/download/Fog_island_1945/Fog_Island_1945.mp4
 #EXTINF:-1 tvg-id="ia-FrankensteinfullMovie" tvg-name="Frankenstein (1910)" tvg-logo="https://archive.org/services/img/FrankensteinfullMovie" group-title="Domínio Público · Terror",Frankenstein (1910)
 https://archive.org/download/FrankensteinfullMovie/Frankenstein1910.mp4
-#EXTINF:-1 tvg-id="ia-frankenstein-1931-restored-movie-720p-hd" tvg-name="Frankenstein (restored) (1931 - pre-code horror - expressionist cinema - imdb score: 7.8)" tvg-logo="https://archive.org/services/img/frankenstein-1931-restored-movie-720p-hd" group-title="Domínio Público · Terror",Frankenstein (restored) (1931 - pre-code horror - expressionist cinema - imdb score: 7.8)
-https://archive.org/download/frankenstein-1931-restored-movie-720p-hd/frankenstein-1931-restored%20movie-720p-hd.mp4
 #EXTINF:-1 tvg-id="ia-gammera" tvg-name="Gammera the Invincible (1965)" tvg-logo="https://archive.org/services/img/gammera" group-title="Domínio Público · Terror",Gammera the Invincible (1965)
 https://archive.org/download/gammera/gamera.mp4
 #EXTINF:-1 tvg-id="ia-gangsters_of_the_frontier_1944" tvg-name="Gangsters of the Frontier (1944)" tvg-logo="https://archive.org/services/img/gangsters_of_the_frontier_1944" group-title="Domínio Público · Suspense e policial",Gangsters of the Frontier (1944)
@@ -385,8 +363,6 @@ https://archive.org/download/Go_for_Broke/Go_for_Broke.mp4
 https://archive.org/download/Gods_Gun/Gods_Gun-KVCD-001.mp4
 #EXTINF:-1 tvg-id="ia-GonewiththeWest" tvg-name="Gone with the West (1975)" tvg-logo="https://archive.org/services/img/GonewiththeWest" group-title="Domínio Público · Faroeste",Gone with the West (1975)
 https://archive.org/download/GonewiththeWest/GonewiththeWest.mp4
-#EXTINF:-1 tvg-id="ia-GonewiththeWest_201511" tvg-name="Gone with the West" tvg-logo="https://archive.org/services/img/GonewiththeWest_201511" group-title="Domínio Público · Clássicos",Gone with the West
-https://archive.org/download/GonewiththeWest_201511/GonewiththeWest.mp4
 #EXTINF:-1 tvg-id="ia-the_gorilla" tvg-name="Gorilla - The (1939)" tvg-logo="https://archive.org/services/img/the_gorilla" group-title="Domínio Público · Clássicos",Gorilla - The (1939)
 https://archive.org/download/the_gorilla/the_gorilla.mp4
 #EXTINF:-1 tvg-id="ia-Grave_of_the_Vampire_movie" tvg-name="Grave of the Vampire (1974)" tvg-logo="https://archive.org/services/img/Grave_of_the_Vampire_movie" group-title="Domínio Público · Terror",Grave of the Vampire (1974)
@@ -397,10 +373,6 @@ https://archive.org/download/great_commandment/great_commandment.mp4
 https://archive.org/download/GreatExpectations1946/GreatExpectations1946.mp4
 #EXTINF:-1 tvg-id="ia-gullivers_travels1939" tvg-name="Gulliver's Travels (1939)" tvg-logo="https://archive.org/services/img/gullivers_travels1939" group-title="Domínio Público · Animação",Gulliver's Travels (1939)
 https://archive.org/download/gullivers_travels1939/gullivers_travels1939.mp4
-#EXTINF:-1 tvg-id="ia-GulliversTravels1939_201509" tvg-name="Gulliver's Travels 1939" tvg-logo="https://archive.org/services/img/GulliversTravels1939_201509" group-title="Domínio Público · Clássicos",Gulliver's Travels 1939
-https://archive.org/download/GulliversTravels1939_201509/GulliversTravels-1939.mp4
-#EXTINF:-1 tvg-id="ia-GulliversTravels720p_652" tvg-name="Gulliver's Travels [720p] (1939)" tvg-logo="https://archive.org/services/img/GulliversTravels720p_652" group-title="Domínio Público · Animação",Gulliver's Travels [720p] (1939)
-https://archive.org/download/GulliversTravels720p_652/GulliversTravels.mp4
 #EXTINF:-1 tvg-id="ia-Gung_Ho" tvg-name="Gung Ho! (1943)" tvg-logo="https://archive.org/services/img/Gung_Ho" group-title="Domínio Público · Guerra",Gung Ho! (1943)
 https://archive.org/download/Gung_Ho/Gung_Ho.mp4
 #EXTINF:-1 tvg-id="ia-Haxan_tinted_and_subtitled" tvg-name="Haxan (1922)" tvg-logo="https://archive.org/services/img/Haxan_tinted_and_subtitled" group-title="Domínio Público · Terror",Haxan (1922)
@@ -421,8 +393,6 @@ https://archive.org/download/cco__HerculesandtheCaptiveWomen/cco_herculesandthec
 https://archive.org/download/Hercules_and_the_Tyrants_of_Babylon/Hercules_and_the_Tyrants_of_Babylon.mp4
 #EXTINF:-1 tvg-id="ia-HerculesUnchained" tvg-name="Hercules Unchained (1959)" tvg-logo="https://archive.org/services/img/HerculesUnchained" group-title="Domínio Público · Clássicos",Hercules Unchained (1959)
 https://archive.org/download/HerculesUnchained/Hercules_Unchained.mp4
-#EXTINF:-1 tvg-id="ia-Hercules_Unchained" tvg-name="Hercules Unchained (1960)" tvg-logo="https://archive.org/services/img/Hercules_Unchained" group-title="Domínio Público · Ação e aventura",Hercules Unchained (1960)
-https://archive.org/download/Hercules_Unchained/Hercules_Unchained_XviD_320x240.mp4
 #EXTINF:-1 tvg-id="ia-HERE_IS_GERMANY" tvg-name="Here is Germany (1945)" tvg-logo="https://archive.org/services/img/HERE_IS_GERMANY" group-title="Domínio Público · Clássicos",Here is Germany (1945)
 https://archive.org/download/HERE_IS_GERMANY/HERE_IS_GERMANY.mp4
 #EXTINF:-1 tvg-id="ia-HiDiddleDiddle" tvg-name="Hi Diddle Diddle" tvg-logo="https://archive.org/services/img/HiDiddleDiddle" group-title="Domínio Público · Clássicos",Hi Diddle Diddle
@@ -433,18 +403,10 @@ https://archive.org/download/HighRisk/High_Risk.mp4
 https://archive.org/download/his_double_life/his_double_life.mp4
 #EXTINF:-1 tvg-id="ia-his_girl_friday" tvg-name="His Girl Friday (1940)" tvg-logo="https://archive.org/services/img/his_girl_friday" group-title="Domínio Público · Comédia",His Girl Friday (1940)
 https://archive.org/download/his_girl_friday/his_girl_friday.mp4
-#EXTINF:-1 tvg-id="ia-HisGirlFriday-1940" tvg-name="His Girl Friday - 1940" tvg-logo="https://archive.org/services/img/HisGirlFriday-1940" group-title="Domínio Público · Comédia",His Girl Friday - 1940
-https://archive.org/download/HisGirlFriday-1940/CaryGrant-1940-HisGirlFriday.mp4
 #EXTINF:-1 tvg-id="ia-Hollywood_Man" tvg-name="Hollywood Man (1976)" tvg-logo="https://archive.org/services/img/Hollywood_Man" group-title="Domínio Público · Clássicos",Hollywood Man (1976)
 https://archive.org/download/Hollywood_Man/Hollywood_Man.mp4
 #EXTINF:-1 tvg-id="ia-Horror_Express" tvg-name="Horror Express (1973)" tvg-logo="https://archive.org/services/img/Horror_Express" group-title="Domínio Público · Terror",Horror Express (1973)
 https://archive.org/download/Horror_Express/Horror_Express.mp4
-#EXTINF:-1 tvg-id="ia-horror_express_ipod" tvg-name="Horror Express (1976)" tvg-logo="https://archive.org/services/img/horror_express_ipod" group-title="Domínio Público · Terror",Horror Express (1976)
-https://archive.org/download/horror_express_ipod/horror_express.mp4
-#EXTINF:-1 tvg-id="ia-Horror_Express_WebM" tvg-name="Horror Express (1972)" tvg-logo="https://archive.org/services/img/Horror_Express_WebM" group-title="Domínio Público · Terror",Horror Express (1972)
-https://archive.org/download/Horror_Express_WebM/horror_express_512kb.mp4
-#EXTINF:-1 tvg-id="ia-HorrorExpresswithSpanishSubtitles" tvg-name="Horror Express (with spanish subtitles) (1973)" tvg-logo="https://archive.org/services/img/HorrorExpresswithSpanishSubtitles" group-title="Domínio Público · Terror",Horror Express (with spanish subtitles) (1973)
-https://archive.org/download/HorrorExpresswithSpanishSubtitles/horror_express_subs.mp4
 #EXTINF:-1 tvg-id="ia-HorrorHotel1960" tvg-name="Horror Hotel (1960)" tvg-logo="https://archive.org/services/img/HorrorHotel1960" group-title="Domínio Público · Terror",Horror Hotel (1960)
 https://archive.org/download/HorrorHotel1960/horror-hotel.mp4
 #EXTINF:-1 tvg-id="ia-hot_rod_girl_1956" tvg-name="Hot Rod Girl (1956)" tvg-logo="https://archive.org/services/img/hot_rod_girl_1956" group-title="Domínio Público · Ação e aventura",Hot Rod Girl (1956)
@@ -473,8 +435,6 @@ https://archive.org/download/Inner_Sanctum_movie/Inner_Sanctum.mp4
 https://archive.org/download/Intolerance/Intolerance_512kb.mp4
 #EXTINF:-1 tvg-id="ia-InvasionOfTheBeeGirls" tvg-name="Invasion of the Bee girls" tvg-logo="https://archive.org/services/img/InvasionOfTheBeeGirls" group-title="Domínio Público · Terror",Invasion of the Bee girls
 https://archive.org/download/InvasionOfTheBeeGirls/InvasionOfTheBeeGirls.mp4
-#EXTINF:-1 tvg-id="ia-InvasionOfTheBeeGirlsWidescreenQualityUpgrade" tvg-name="INVASION OF THE BEE GIRLS widescreen & quality upgrade." tvg-logo="https://archive.org/services/img/InvasionOfTheBeeGirlsWidescreenQualityUpgrade" group-title="Domínio Público · Clássicos",INVASION OF THE BEE GIRLS widescreen & quality upgrade.
-https://archive.org/download/InvasionOfTheBeeGirlsWidescreenQualityUpgrade/InvasionOfTheBeeGirlsWidescreen.mp4
 #EXTINF:-1 tvg-id="ia-irish_luck_ipod" tvg-name="Irish Luck (1939)" tvg-logo="https://archive.org/services/img/irish_luck_ipod" group-title="Domínio Público · Suspense e policial",Irish Luck (1939)
 https://archive.org/download/irish_luck_ipod/irish_luck.mp4
 #EXTINF:-1 tvg-id="ia-IronAngel" tvg-name="Iron Angel (1964)" tvg-logo="https://archive.org/services/img/IronAngel" group-title="Domínio Público · Guerra",Iron Angel (1964)
@@ -512,7 +472,7 @@ https://archive.org/download/kansascityconfidencial/kansascityconfidencial.mp4
 #EXTINF:-1 tvg-id="ia-kansas_pacific" tvg-name="Kansas Pacific (1953)" tvg-logo="https://archive.org/services/img/kansas_pacific" group-title="Domínio Público · Clássicos",Kansas Pacific (1953)
 https://archive.org/download/kansas_pacific/kansas_pacific.mp4
 #EXTINF:-1 tvg-id="ia-kid_dynamite" tvg-name="Kid Dynamite (1943)" tvg-logo="https://archive.org/services/img/kid_dynamite" group-title="Domínio Público · Comédia",Kid Dynamite (1943)
-https://archive.org/download/kid_dynamite/kid_dynamitearchive.mp4
+https://archive.org/download/kid_dynamite/kid_dynamite.mp4
 #EXTINF:-1 tvg-id="ia-killer_dill" tvg-name="Killer Dill (1947)" tvg-logo="https://archive.org/services/img/killer_dill" group-title="Domínio Público · Comédia",Killer Dill (1947)
 https://archive.org/download/killer_dill/killer_dill.mp4
 #EXTINF:-1 tvg-id="ia-killer_diller" tvg-name="Killer Diller (1948)" tvg-logo="https://archive.org/services/img/killer_diller" group-title="Domínio Público · Comédia",Killer Diller (1948)
@@ -583,10 +543,10 @@ https://archive.org/download/million_dollar_weekend/million_dollar_weekend.mp4
 https://archive.org/download/Minesweeper_1943/minesweeper.mp4
 #EXTINF:-1 tvg-id="ia-misbehaving_husbands" tvg-name="Misbehaving Husbands (1940)" tvg-logo="https://archive.org/services/img/misbehaving_husbands" group-title="Domínio Público · Clássicos",Misbehaving Husbands (1940)
 https://archive.org/download/misbehaving_husbands/misbehaving_husbands.mp4
-#EXTINF:-1 tvg-id="ia-miss_london_ltd_1943" tvg-name="Miss London Ltd. (1943)" tvg-logo="https://archive.org/services/img/miss_london_ltd_1943" group-title="Domínio Público · Comédia",Miss London Ltd. (1943)
+#EXTINF:-1 tvg-id="ia-miss_london_ltd_1943" tvg-name="Miss London Ltd (1943)" tvg-logo="https://archive.org/services/img/miss_london_ltd_1943" group-title="Domínio Público · Comédia",Miss London Ltd (1943)
 https://archive.org/download/miss_london_ltd_1943/miss_london_ltd.mp4
 #EXTINF:-1 tvg-id="ia-mr_robinson_crusoe" tvg-name="Mr. Robinson Crusoe (1932)" tvg-logo="https://archive.org/services/img/mr_robinson_crusoe" group-title="Domínio Público · Comédia",Mr. Robinson Crusoe (1932)
-https://archive.org/download/mr_robinson_crusoe/video.mp4
+https://archive.org/download/mr_robinson_crusoe/mr._robinson_crusoe.mp4
 #EXTINF:-1 tvg-id="ia-Mr._Wong_Detective" tvg-name="Mr. Wong - Detective (1938)" tvg-logo="https://archive.org/services/img/Mr._Wong_Detective" group-title="Domínio Público · Suspense e policial",Mr. Wong - Detective (1938)
 https://archive.org/download/Mr._Wong_Detective/Mr._Wong_Detective.mp4
 #EXTINF:-1 tvg-id="ia-MudandSand" tvg-name="Mud and Sand (1922)" tvg-logo="https://archive.org/services/img/MudandSand" group-title="Domínio Público · Comédia",Mud and Sand (1922)
@@ -609,8 +569,6 @@ https://archive.org/download/my_love_for_yours_ipod/my_love_for_yours.mp4
 https://archive.org/download/MyManGodfrey1936/MyManGodfrey1936.mp4
 #EXTINF:-1 tvg-id="ia-my_pal_trigger" tvg-name="My Pal Trigger (1946)" tvg-logo="https://archive.org/services/img/my_pal_trigger" group-title="Domínio Público · Faroeste",My Pal Trigger (1946)
 https://archive.org/download/my_pal_trigger/my_pal_trigger.mp4
-#EXTINF:-1 tvg-id="ia-NakedMassacre1976" tvg-name="Naked Massacre (1976)" tvg-logo="https://archive.org/services/img/NakedMassacre1976" group-title="Domínio Público · Terror",Naked Massacre (1976)
-https://archive.org/download/NakedMassacre1976/MoviePowderPresentsNakedMassacre.mp4
 #EXTINF:-1 tvg-id="ia-nancy_drew_reporter" tvg-name="Nancy Drew... Reporter (1939)" tvg-logo="https://archive.org/services/img/nancy_drew_reporter" group-title="Domínio Público · Suspense e policial",Nancy Drew... Reporter (1939)
 https://archive.org/download/nancy_drew_reporter/nancy_drew_reporter.mp4
 #EXTINF:-1 tvg-id="ia-Napoleon_" tvg-name="Napoleon (1955)" tvg-logo="https://archive.org/services/img/Napoleon_" group-title="Domínio Público · Drama e romance",Napoleon (1955)
@@ -622,13 +580,13 @@ https://archive.org/download/nevada_city_ipod/nevada_city.mp4
 #EXTINF:-1 tvg-id="ia-new_adventures_of_tarzan" tvg-name="New Adventures of Tarzan" tvg-logo="https://archive.org/services/img/new_adventures_of_tarzan" group-title="Domínio Público · Ação e aventura",New Adventures of Tarzan
 https://archive.org/download/new_adventures_of_tarzan/new_adventures_of_tarzan.mp4
 #EXTINF:-1 tvg-id="ia-Night.Of.The.Living.Dead_1080p" tvg-name="Night of the Living Dead (1968)" tvg-logo="https://archive.org/services/img/Night.Of.The.Living.Dead_1080p" group-title="Domínio Público · Terror",Night of the Living Dead (1968)
-https://archive.org/download/Night.Of.The.Living.Dead_1080p/NightOfTheLivingDead_720p.mp4
+https://archive.org/download/Night.Of.The.Living.Dead_1080p/NightOfTheLivingDead.mp4
 #EXTINF:-1 tvg-id="ia-northwest_trail" tvg-name="Northwest Trail (1945)" tvg-logo="https://archive.org/services/img/northwest_trail" group-title="Domínio Público · Clássicos",Northwest Trail (1945)
 https://archive.org/download/northwest_trail/northwest_trail.mp4
 #EXTINF:-1 tvg-id="ia-Nosferatu_most_complete_version_93_mins." tvg-name="Nosferatu - eine Symphonie des Grauens (A Symphony of Horror) (1922)" tvg-logo="https://archive.org/services/img/Nosferatu_most_complete_version_93_mins." group-title="Domínio Público · Terror",Nosferatu - eine Symphonie des Grauens (A Symphony of Horror) (1922)
 https://archive.org/download/Nosferatu_most_complete_version_93_mins./Nosferatu_1922_Symphony_of_Horror_512kb.mp4
 #EXTINF:-1 tvg-id="ia-Nosferatu_DVD_quality" tvg-name="Nosferatu_DVD_quality (1922)" tvg-logo="https://archive.org/services/img/Nosferatu_DVD_quality" group-title="Domínio Público · Terror",Nosferatu_DVD_quality (1922)
-https://archive.org/download/Nosferatu_DVD_quality/nosferatu-4of5_512kb.mp4
+https://archive.org/download/Nosferatu_DVD_quality/nosferatu-1of5_512kb.mp4
 #EXTINF:-1 tvg-id="ia-NothingSacred" tvg-name="Nothing Sacred (1937)" tvg-logo="https://archive.org/services/img/NothingSacred" group-title="Domínio Público · Comédia",Nothing Sacred (1937)
 https://archive.org/download/NothingSacred/NothingSacred.mp4
 #EXTINF:-1 tvg-id="ia-humanbondage" tvg-name="Of Human Bondage (1934)" tvg-logo="https://archive.org/services/img/humanbondage" group-title="Domínio Público · Guerra",Of Human Bondage (1934)
@@ -656,7 +614,7 @@ https://archive.org/download/paradise_express/paradise_express.mp4
 #EXTINF:-1 tvg-id="ia-ParlorBedroomandBath" tvg-name="Parlor - Bedroom and Bath (1931)" tvg-logo="https://archive.org/services/img/ParlorBedroomandBath" group-title="Domínio Público · Comédia",Parlor - Bedroom and Bath (1931)
 https://archive.org/download/ParlorBedroomandBath/Parlor_Bedroom_and_Bath.mp4
 #EXTINF:-1 tvg-id="ia-PeliculasDeChaplin-1914" tvg-name="Peliculas de Chaplin - 1914" tvg-logo="https://archive.org/services/img/PeliculasDeChaplin-1914" group-title="Domínio Público · Clássicos",Peliculas de Chaplin - 1914
-https://archive.org/download/PeliculasDeChaplin-1914/1914-11-14TilliesPuncturedRomance_512kb.mp4
+https://archive.org/download/PeliculasDeChaplin-1914/1914-02-02MakingALiving_512kb.mp4
 #EXTINF:-1 tvg-id="ia-penny_serenade" tvg-name="Penny Serenade (1941)" tvg-logo="https://archive.org/services/img/penny_serenade" group-title="Domínio Público · Comédia",Penny Serenade (1941)
 https://archive.org/download/penny_serenade/penny_serenade.mp4
 #EXTINF:-1 tvg-id="ia-Phantom_From_Space" tvg-name="Phantom From Space (1953)" tvg-logo="https://archive.org/services/img/Phantom_From_Space" group-title="Domínio Público · Ficção científica",Phantom From Space (1953)
@@ -686,7 +644,7 @@ https://archive.org/download/private_buckaroo_ipod/private_buckaroo.mp4
 #EXTINF:-1 tvg-id="ia-private_snuffy_smith" tvg-name="Private Snuffy Smith (1942)" tvg-logo="https://archive.org/services/img/private_snuffy_smith" group-title="Domínio Público · Comédia",Private Snuffy Smith (1942)
 https://archive.org/download/private_snuffy_smith/private_snuffy_smith.mp4
 #EXTINF:-1 tvg-id="ia-publicmovies212" tvg-name="Public Domain Movies" tvg-logo="https://archive.org/services/img/publicmovies212" group-title="Domínio Público · Clássicos",Public Domain Movies
-https://archive.org/download/publicmovies212/Till_The_Clouds_Roll_By.mp4
+https://archive.org/download/publicmovies212/A_Boy_and_His_Dog.mp4
 #EXTINF:-1 tvg-id="ia-Pygmalion" tvg-name="Pygmalion (1938)" tvg-logo="https://archive.org/services/img/Pygmalion" group-title="Domínio Público · Comédia",Pygmalion (1938)
 https://archive.org/download/Pygmalion/Pygmalion.mp4
 #EXTINF:-1 tvg-id="ia-QuevivaMexico" tvg-name="Que Viva Mexico (1931)" tvg-logo="https://archive.org/services/img/QuevivaMexico" group-title="Domínio Público · Clássicos",Que Viva Mexico (1931)
@@ -706,7 +664,7 @@ https://archive.org/download/RandyRidesAlone/RandyRideAlone.mp4
 #EXTINF:-1 tvg-id="ia-reefer_madness1938" tvg-name="Reefer Madness (1938)" tvg-logo="https://archive.org/services/img/reefer_madness1938" group-title="Domínio Público · Clássicos",Reefer Madness (1938)
 https://archive.org/download/reefer_madness1938/reefer_madness1938.mp4
 #EXTINF:-1 tvg-id="ia-Reign_of_the_Fallen" tvg-name="Reign of the Fallen (2006)" tvg-logo="https://archive.org/services/img/Reign_of_the_Fallen" group-title="Domínio Público · Guerra",Reign of the Fallen (2006)
-https://archive.org/download/Reign_of_the_Fallen/Reign_of_the_Fallen_sor3.mp4
+https://archive.org/download/Reign_of_the_Fallen/Reign_of_the_Fallen_h264.mp4
 #EXTINF:-1 tvg-id="ia-renegade_girl" tvg-name="Renegade Girl (1946)" tvg-logo="https://archive.org/services/img/renegade_girl" group-title="Domínio Público · Clássicos",Renegade Girl (1946)
 https://archive.org/download/renegade_girl/renegade_girl.mp4
 #EXTINF:-1 tvg-id="ia-renfrew_of_the_royal_mounted" tvg-name="Renfrew of the Royal Mounted (1937)" tvg-logo="https://archive.org/services/img/renfrew_of_the_royal_mounted" group-title="Domínio Público · Ação e aventura",Renfrew of the Royal Mounted (1937)
@@ -722,7 +680,7 @@ https://archive.org/download/road_to_happiness/road_to_happiness.mp4
 #EXTINF:-1 tvg-id="ia-RoarinLead1936" tvg-name="Roarin' Lead (1936)" tvg-logo="https://archive.org/services/img/RoarinLead1936" group-title="Domínio Público · Clássicos",Roarin' Lead (1936)
 https://archive.org/download/RoarinLead1936/RoarinLead1936.mp4
 #EXTINF:-1 tvg-id="ia-FairbanksRobinHood1922" tvg-name="Robin Hood (1922)" tvg-logo="https://archive.org/services/img/FairbanksRobinHood1922" group-title="Domínio Público · Clássicos",Robin Hood (1922)
-https://archive.org/download/FairbanksRobinHood1922/FairbanksRobinHood1922/FairbanksRobinHood1922_256kb.mp4
+https://archive.org/download/FairbanksRobinHood1922/FairbanksRobinHood1922/FairbanksRobinHood1922_512kb.mp4
 #EXTINF:-1 tvg-id="ia-rock_rock_rock" tvg-name="Rock - Rock - Rock (1956)" tvg-logo="https://archive.org/services/img/rock_rock_rock" group-title="Domínio Público · Musical",Rock - Rock - Rock (1956)
 https://archive.org/download/rock_rock_rock/Rock_Rock_Rock.mp4
 #EXTINF:-1 tvg-id="ia-rockstar-2011" tvg-name="Rockstar ( 2011)" tvg-logo="https://archive.org/services/img/rockstar-2011" group-title="Domínio Público · Clássicos",Rockstar ( 2011)
@@ -755,8 +713,6 @@ https://archive.org/download/second_chorus_1940/second_chorus.mp4
 https://archive.org/download/Hitchcock_Secret_Agent/Secret_Agent.mp4
 #EXTINF:-1 tvg-id="ia-seven_were_saved" tvg-name="Seven Were Saved (1947)" tvg-logo="https://archive.org/services/img/seven_were_saved" group-title="Domínio Público · Clássicos",Seven Were Saved (1947)
 https://archive.org/download/seven_were_saved/seven_were_saved.mp4
-#EXTINF:-1 tvg-id="ia-sex_madness" tvg-name="Sex Madness (1938)" tvg-logo="https://archive.org/services/img/sex_madness" group-title="Domínio Público · Drama e romance",Sex Madness (1938)
-https://archive.org/download/sex_madness/sex_madness.mp4
 #EXTINF:-1 tvg-id="ia-shame_" tvg-name="Shame (1962)" tvg-logo="https://archive.org/services/img/shame_" group-title="Domínio Público · Drama e romance",Shame (1962)
 https://archive.org/download/shame_/Shame.mp4
 #EXTINF:-1 tvg-id="ia-she_gods_of_shark_reef" tvg-name="She Gods of Shark Reef (1958)" tvg-logo="https://archive.org/services/img/she_gods_of_shark_reef" group-title="Domínio Público · Ação e aventura",She Gods of Shark Reef (1958)
@@ -764,21 +720,19 @@ https://archive.org/download/she_gods_of_shark_reef/she_gods_of_shark_reef.mp4
 #EXTINF:-1 tvg-id="ia-SheriffofTombstone" tvg-name="Sheriff of Tombstone (1941)" tvg-logo="https://archive.org/services/img/SheriffofTombstone" group-title="Domínio Público · Faroeste",Sheriff of Tombstone (1941)
 https://archive.org/download/SheriffofTombstone/SheriffofTombstone.mp4
 #EXTINF:-1 tvg-id="ia-secret_weapon" tvg-name="Sherlock Holmes and the Secret Weapon (1943)" tvg-logo="https://archive.org/services/img/secret_weapon" group-title="Domínio Público · Suspense e policial",Sherlock Holmes and the Secret Weapon (1943)
-https://archive.org/download/secret_weapon/sherlock_holmes_and_the_secret_weapon.mp4
+https://archive.org/download/secret_weapon/secret_weapon_ipod.mp4
 #EXTINF:-1 tvg-id="ia-shock" tvg-name="Shock (1946)" tvg-logo="https://archive.org/services/img/shock" group-title="Domínio Público · Terror",Shock (1946)
 https://archive.org/download/shock/Shock.mp4
 #EXTINF:-1 tvg-id="ia-ShockerInternetDriveIn-Week18aNaschyDoubleFeature" tvg-name="Shocker Internet Drive In - Week 18: 'A Naschy Double Feature'" tvg-logo="https://archive.org/services/img/ShockerInternetDriveIn-Week18aNaschyDoubleFeature" group-title="Domínio Público · Terror",Shocker Internet Drive In - Week 18: 'A Naschy Double Feature'
 https://archive.org/download/ShockerInternetDriveIn-Week18aNaschyDoubleFeature/week_18.mp4
 #EXTINF:-1 tvg-id="ia-SilentNightBloodyNight" tvg-name="Silent Night - Bloody Night (1974)" tvg-logo="https://archive.org/services/img/SilentNightBloodyNight" group-title="Domínio Público · Terror",Silent Night - Bloody Night (1974)
-https://archive.org/download/SilentNightBloodyNight/Silent_Night_Bloody_Night.mp4
-#EXTINF:-1 tvg-id="ia-SilentNightBloodyNight1972" tvg-name="Silent Night - Bloody Night (WideScreen/Uncut) (1972)" tvg-logo="https://archive.org/services/img/SilentNightBloodyNight1972" group-title="Domínio Público · Terror",Silent Night - Bloody Night (WideScreen/Uncut) (1972)
-https://archive.org/download/SilentNightBloodyNight1972/SilentNightWSUncut.mp4
+https://archive.org/download/SilentNightBloodyNight/SilentNightBloodyNight.mp4
 #EXTINF:-1 tvg-id="ia-the_silver_trail" tvg-name="Silver Trail - The (1937)" tvg-logo="https://archive.org/services/img/the_silver_trail" group-title="Domínio Público · Faroeste",Silver Trail - The (1937)
 https://archive.org/download/the_silver_trail/the_silver_trail.mp4
 #EXTINF:-1 tvg-id="ia-sing_a_song_of_six_pants" tvg-name="Sing A Song of Six Pants (1947)" tvg-logo="https://archive.org/services/img/sing_a_song_of_six_pants" group-title="Domínio Público · Comédia",Sing A Song of Six Pants (1947)
 https://archive.org/download/sing_a_song_of_six_pants/sing_a_song_of_six_pants.mp4
 #EXTINF:-1 tvg-id="ia-Sita_Sings_the_Blues" tvg-name="Sita Sings the Blues (2008)" tvg-logo="https://archive.org/services/img/Sita_Sings_the_Blues" group-title="Domínio Público · Clássicos",Sita Sings the Blues (2008)
-https://archive.org/download/Sita_Sings_the_Blues/Sita_Sings_the_Blues_DVD_NTSC.mp4
+https://archive.org/download/Sita_Sings_the_Blues/SITA_SINGS_MOVIE_ONLY.mp4
 #EXTINF:-1 tvg-id="ia-six_gun_trail" tvg-name="Six Gun Trail (1938)" tvg-logo="https://archive.org/services/img/six_gun_trail" group-title="Domínio Público · Faroeste",Six Gun Trail (1938)
 https://archive.org/download/six_gun_trail/six_gun_trail.mp4
 #EXTINF:-1 tvg-id="ia-sky_patrol_ipod" tvg-name="Sky Patrol (1939)" tvg-logo="https://archive.org/services/img/sky_patrol_ipod" group-title="Domínio Público · Ação e aventura",Sky Patrol (1939)
@@ -793,7 +747,7 @@ https://archive.org/download/south_of_santa_fe/south_of_santa_fe.mp4
 https://archive.org/download/StarOdysseyitalianStarWars1979/STAR_ODYSSEY_1979-desktop.mp4
 #EXTINF:-1 tvg-id="ia-StarWreckInThePirkining" tvg-name="Star Wreck: In the Pirkining (2005)" tvg-logo="https://archive.org/services/img/StarWreckInThePirkining" group-title="Domínio Público · Ficção científica",Star Wreck: In the Pirkining (2005)
 https://archive.org/download/StarWreckInThePirkining/StarWreck.mp4
-#EXTINF:-1 tvg-id="ia-steamboat_bill_ipod" tvg-name="Steamboat Bill Jr. (1928)" tvg-logo="https://archive.org/services/img/steamboat_bill_ipod" group-title="Domínio Público · Comédia",Steamboat Bill Jr. (1928)
+#EXTINF:-1 tvg-id="ia-steamboat_bill_ipod" tvg-name="Steamboat Bill Jr (1928)" tvg-logo="https://archive.org/services/img/steamboat_bill_ipod" group-title="Domínio Público · Comédia",Steamboat Bill Jr (1928)
 https://archive.org/download/steamboat_bill_ipod/steamboat_bill.mp4
 #EXTINF:-1 tvg-id="ia-StreetScene1931" tvg-name="Street Scene (1931)" tvg-logo="https://archive.org/services/img/StreetScene1931" group-title="Domínio Público · Drama e romance",Street Scene (1931)
 https://archive.org/download/StreetScene1931/StreetScene1931VidorDvdgrand-rip.mp4
@@ -836,7 +790,7 @@ https://archive.org/download/TheAmazingTransparentMan1960/the-amazing-transparen
 #EXTINF:-1 tvg-id="ia-TheArizonaRaiders" tvg-name="The Arizona Raiders (1936)" tvg-logo="https://archive.org/services/img/TheArizonaRaiders" group-title="Domínio Público · Faroeste",The Arizona Raiders (1936)
 https://archive.org/download/TheArizonaRaiders/TheArizonaRaiders.mp4
 #EXTINF:-1 tvg-id="ia-the_bashful_bachelor" tvg-name="The Bashful Bachelor (1942)" tvg-logo="https://archive.org/services/img/the_bashful_bachelor" group-title="Domínio Público · Comédia",The Bashful Bachelor (1942)
-https://archive.org/download/the_bashful_bachelor/the_bashful_bachelor.mp4
+https://archive.org/download/the_bashful_bachelor/bashful_bachelor.mp4
 #EXTINF:-1 tvg-id="ia-TheBeachGirlsAndTheMonster" tvg-name="The Beach Girls and the Monster (1965)" tvg-logo="https://archive.org/services/img/TheBeachGirlsAndTheMonster" group-title="Domínio Público · Terror",The Beach Girls and the Monster (1965)
 https://archive.org/download/TheBeachGirlsAndTheMonster/TheBeachGirlsAndTheMonster.mp4
 #EXTINF:-1 tvg-id="ia-The_Big_Combo_1955" tvg-name="The Big Combo (1955)" tvg-logo="https://archive.org/services/img/The_Big_Combo_1955" group-title="Domínio Público · Clássicos",The Big Combo (1955)
@@ -863,8 +817,6 @@ https://archive.org/download/Lady_X/The_Divorce_of_Lady_X.mp4
 https://archive.org/download/The_Fatal_Hour/The_Fatal_Hour.mp4
 #EXTINF:-1 tvg-id="ia-TheFlyingDeuces" tvg-name="The Flying Deuces (1939)" tvg-logo="https://archive.org/services/img/TheFlyingDeuces" group-title="Domínio Público · Comédia",The Flying Deuces (1939)
 https://archive.org/download/TheFlyingDeuces/The_Flying_Deuces.mp4
-#EXTINF:-1 tvg-id="ia-TheGeneral" tvg-name="The General (1927)" tvg-logo="https://archive.org/services/img/TheGeneral" group-title="Domínio Público · Comédia",The General (1927)
-https://archive.org/download/TheGeneral/The_General_512kb.mp4
 #EXTINF:-1 tvg-id="ia-The_General_Buster_Keaton" tvg-name="The General (complete & clearer) (1926)" tvg-logo="https://archive.org/services/img/The_General_Buster_Keaton" group-title="Domínio Público · Cinema mudo",The General (complete & clearer) (1926)
 https://archive.org/download/The_General_Buster_Keaton/The_General.mp4
 #EXTINF:-1 tvg-id="ia-TheGhostTrain" tvg-name="The Ghost Train (1941)" tvg-logo="https://archive.org/services/img/TheGhostTrain" group-title="Domínio Público · Terror",The Ghost Train (1941)
@@ -882,7 +834,7 @@ https://archive.org/download/the-grapes-of-wrath-1940/The%20Grapes%20Of%20Wrath%
 #EXTINF:-1 tvg-id="ia-TheGreatTrainRobbery_555" tvg-name="The Great Train Robbery (1903)" tvg-logo="https://archive.org/services/img/TheGreatTrainRobbery_555" group-title="Domínio Público · Cinema mudo",The Great Train Robbery (1903)
 https://archive.org/download/TheGreatTrainRobbery_555/TheGreatTrainRobbery.mp4
 #EXTINF:-1 tvg-id="ia-the_green_glove" tvg-name="The Green Glove (1952)" tvg-logo="https://archive.org/services/img/the_green_glove" group-title="Domínio Público · Suspense e policial",The Green Glove (1952)
-https://archive.org/download/the_green_glove/the_green_glove.mp4
+https://archive.org/download/the_green_glove/greenglove.mp4
 #EXTINF:-1 tvg-id="ia-cco_thegunandthepulpit" tvg-name="The Gun and the Pulpit (1974)" tvg-logo="https://archive.org/services/img/cco_thegunandthepulpit" group-title="Domínio Público · Faroeste",The Gun and the Pulpit (1974)
 https://archive.org/download/cco_thegunandthepulpit/ccoPublicDomainThe_Gun_and_the_Pulpit.mp4
 #EXTINF:-1 tvg-id="ia-Hitch_Hiker" tvg-name="The Hitch-Hiker (1953)" tvg-logo="https://archive.org/services/img/Hitch_Hiker" group-title="Domínio Público · Terror",The Hitch-Hiker (1953)
@@ -903,8 +855,8 @@ https://archive.org/download/Lady_Confesses/Lady_Confesses.mp4
 https://archive.org/download/PublicdomainTheLastoftheMohicans/Last_of_the_Mohicans.mp4
 #EXTINF:-1 tvg-id="ia-LastWonanOnEarthColor" tvg-name="The Last Woman On Earth" tvg-logo="https://archive.org/services/img/LastWonanOnEarthColor" group-title="Domínio Público · Ficção científica",The Last Woman On Earth
 https://archive.org/download/LastWonanOnEarthColor/TheLastWomanOnEarth.mp4
-#EXTINF:-1 tvg-id="ia-ClassicCinemaOnline_PublicDomain_TheLawlessFrontier" tvg-name="The Lawless Frontier (1934)" tvg-logo="https://archive.org/services/img/ClassicCinemaOnline_PublicDomain_TheLawlessFrontier" group-title="Domínio Público · Clássicos",The Lawless Frontier (1934)
-https://archive.org/download/ClassicCinemaOnline_PublicDomain_TheLawlessFrontier/ClassicCinemaOnline--PublicDomain--TheLawlessFrontier.mp4
+#EXTINF:-1 tvg-id="ia-TheLawlessFrontier1934" tvg-name="The Lawless Frontier (1934)" tvg-logo="https://archive.org/services/img/TheLawlessFrontier1934" group-title="Domínio Público · Clássicos",The Lawless Frontier (1934)
+https://archive.org/download/TheLawlessFrontier1934/TheLawlessFrontier1934.mp4
 #EXTINF:-1 tvg-id="ia-The_Legend_of_Marilyn_Monroe" tvg-name="The Legend of Marilyn Monroe (1964)" tvg-logo="https://archive.org/services/img/The_Legend_of_Marilyn_Monroe" group-title="Domínio Público · Clássicos",The Legend of Marilyn Monroe (1964)
 https://archive.org/download/The_Legend_of_Marilyn_Monroe/The_Legend_of_Marilyn_Monroe.mp4
 #EXTINF:-1 tvg-id="ia-TheLimpingMan" tvg-name="The Limping Man (1953)" tvg-logo="https://archive.org/services/img/TheLimpingMan" group-title="Domínio Público · Suspense e policial",The Limping Man (1953)
@@ -933,10 +885,8 @@ https://archive.org/download/TheMostDangerousGame/TheMostDangerousGame.mp4
 https://archive.org/download/mark_of_the_avenger_1938/mark_of_the_avenger.mp4
 #EXTINF:-1 tvg-id="ia-The_Mystery_of_Mr._Wong" tvg-name="The Mystery of Mr. Wong (1939)" tvg-logo="https://archive.org/services/img/The_Mystery_of_Mr._Wong" group-title="Domínio Público · Suspense e policial",The Mystery of Mr. Wong (1939)
 https://archive.org/download/The_Mystery_of_Mr._Wong/The_Mystery_of_Mr._Wong.mp4
-#EXTINF:-1 tvg-id="ia-TheNakedWitch" tvg-name="The Naked Witch" tvg-logo="https://archive.org/services/img/TheNakedWitch" group-title="Domínio Público · Terror",The Naked Witch
-https://archive.org/download/TheNakedWitch/TheNakedWitch1964FullMovieFilmHorror.mp4
 #EXTINF:-1 tvg-id="ia-The_Night_of_Counting_the_Years" tvg-name="The Night of Counting the Years (1969)" tvg-logo="https://archive.org/services/img/The_Night_of_Counting_the_Years" group-title="Domínio Público · Clássicos",The Night of Counting the Years (1969)
-https://archive.org/download/The_Night_of_Counting_the_Years/the-night-of-counting-the-years-2.mp4
+https://archive.org/download/The_Night_of_Counting_the_Years/the-night-of-counting-the-years-1.mp4
 #EXTINF:-1 tvg-id="ia-TheOvertheHillGang" tvg-name="The Over-the-Hill Gang (1969)" tvg-logo="https://archive.org/services/img/TheOvertheHillGang" group-title="Domínio Público · Faroeste",The Over-the-Hill Gang (1969)
 https://archive.org/download/TheOvertheHillGang/TheOvertheHillGang.mp4
 #EXTINF:-1 tvg-id="ia-TheOver-the-HillGangRidesAgain" tvg-name="The Over-the-Hill Gang Rides Again (1970)" tvg-logo="https://archive.org/services/img/TheOver-the-HillGangRidesAgain" group-title="Domínio Público · Faroeste",The Over-the-Hill Gang Rides Again (1970)
@@ -957,8 +907,6 @@ https://archive.org/download/Phantom_Planet/The_Phantom_Planet.mp4
 https://archive.org/download/The_Pied_Piper_of_Hamelin/pied.mp4
 #EXTINF:-1 tvg-id="ia-TheProudandtheDamned_201511" tvg-name="The Proud and the Damned" tvg-logo="https://archive.org/services/img/TheProudandtheDamned_201511" group-title="Domínio Público · Clássicos",The Proud and the Damned
 https://archive.org/download/TheProudandtheDamned_201511/TheProudandtheDamned.mp4
-#EXTINF:-1 tvg-id="ia-TheProudAndTheDamned-1972" tvg-name="The Proud And The Damned-1972" tvg-logo="https://archive.org/services/img/TheProudAndTheDamned-1972" group-title="Domínio Público · Faroeste",The Proud And The Damned-1972
-https://archive.org/download/TheProudAndTheDamned-1972/TheProundAndTheDamned.mp4
 #EXTINF:-1 tvg-id="ia-the_quiet_one" tvg-name="The Quiet One (1948)" tvg-logo="https://archive.org/services/img/the_quiet_one" group-title="Domínio Público · Clássicos",The Quiet One (1948)
 https://archive.org/download/the_quiet_one/the_quiet_one.mp4
 #EXTINF:-1 tvg-id="ia-TheRangeFeud1931-BuckJonesAndJohnWayne" tvg-name="The Range Feud (1931) - Buck Jones and John Wayne" tvg-logo="https://archive.org/services/img/TheRangeFeud1931-BuckJonesAndJohnWayne" group-title="Domínio Público · Faroeste",The Range Feud (1931) - Buck Jones and John Wayne
@@ -1025,14 +973,14 @@ https://archive.org/download/TheTrailBeyond1934/TheTrailBeyond1934.mp4
 https://archive.org/download/The_Wasp_Women/The_Wasp_Women.mp4
 #EXTINF:-1 tvg-id="ia-TheWhiteWarrior1961" tvg-name="The White Warrior (1961)" tvg-logo="https://archive.org/services/img/TheWhiteWarrior1961" group-title="Domínio Público · Guerra",The White Warrior (1961)
 https://archive.org/download/TheWhiteWarrior1961/TheWhiteWarrior1961.mp4
-#EXTINF:-1 tvg-id="ia-TheWildWomenOfWongoVideoQualityUpgrade" tvg-name="THE WILD WOMEN OF WONGO video quality upgrade." tvg-logo="https://archive.org/services/img/TheWildWomenOfWongoVideoQualityUpgrade" group-title="Domínio Público · Ação e aventura",THE WILD WOMEN OF WONGO video quality upgrade.
+#EXTINF:-1 tvg-id="ia-TheWildWomenOfWongoVideoQualityUpgrade" tvg-name="THE WILD WOMEN OF WONGO video quality upgrade" tvg-logo="https://archive.org/services/img/TheWildWomenOfWongoVideoQualityUpgrade" group-title="Domínio Público · Ação e aventura",THE WILD WOMEN OF WONGO video quality upgrade
 https://archive.org/download/TheWildWomenOfWongoVideoQualityUpgrade/TheWildWomenOfWongoVideoQualityUpgrade.mp4
 #EXTINF:-1 tvg-id="ia-TheWizardOfOz1925" tvg-name="The Wizard Of Oz 1925" tvg-logo="https://archive.org/services/img/TheWizardOfOz1925" group-title="Domínio Público · Clássicos",The Wizard Of Oz 1925
 https://archive.org/download/TheWizardOfOz1925/LarrySemonsWizardOfOzsilent1925.mp4
 #EXTINF:-1 tvg-id="ia-TheWomanInGreen1945" tvg-name="The Woman In Green (1945)" tvg-logo="https://archive.org/services/img/TheWomanInGreen1945" group-title="Domínio Público · Suspense e policial",The Woman In Green (1945)
 https://archive.org/download/TheWomanInGreen1945/TheWomanInGreen.mp4
 #EXTINF:-1 tvg-id="ia-The_Wonderful_Wizard_of_Oz" tvg-name="The Wonderful Wizard of Oz (1910)" tvg-logo="https://archive.org/services/img/The_Wonderful_Wizard_of_Oz" group-title="Domínio Público · Cinema mudo",The Wonderful Wizard of Oz (1910)
-https://archive.org/download/The_Wonderful_Wizard_of_Oz/WonderfulWizardofOz1910.mp4
+https://archive.org/download/The_Wonderful_Wizard_of_Oz/WizardOfOz1910.mp4
 #EXTINF:-1 tvg-id="ia-TheYesterdayMachine1963" tvg-name="The Yesterday Machine (1963)" tvg-logo="https://archive.org/services/img/TheYesterdayMachine1963" group-title="Domínio Público · Ficção científica",The Yesterday Machine (1963)
 https://archive.org/download/TheYesterdayMachine1963/TheYesterdayMachine1963.mp4
 #EXTINF:-1 tvg-id="ia-YoungLand" tvg-name="The Young Land (1959)" tvg-logo="https://archive.org/services/img/YoungLand" group-title="Domínio Público · Faroeste",The Young Land (1959)
@@ -1085,16 +1033,10 @@ https://archive.org/download/UpInTheAir/Up_in_the_Air.mp4
 https://archive.org/download/Vampyr1932/NVEExport.mp4
 #EXTINF:-1 tvg-id="ia-VengeanceValley" tvg-name="Vengeance Valley (1951)" tvg-logo="https://archive.org/services/img/VengeanceValley" group-title="Domínio Público · Faroeste",Vengeance Valley (1951)
 https://archive.org/download/VengeanceValley/VengeanceValley.mp4
-#EXTINF:-1 tvg-id="ia-cco_virus" tvg-name="Virus (Fukkatsu no hi ) (1980)" tvg-logo="https://archive.org/services/img/cco_virus" group-title="Domínio Público · Clássicos",Virus (Fukkatsu no hi ) (1980)
-https://archive.org/download/cco_virus/ccoPublicDomainVirus.mp4
-#EXTINF:-1 tvg-id="ia-VirusFukkatsuNoHi1980" tvg-name="Virus (Fukkatsu no hi 復活の日) (1980)" tvg-logo="https://archive.org/services/img/VirusFukkatsuNoHi1980" group-title="Domínio Público · Clássicos",Virus (Fukkatsu no hi 復活の日) (1980)
-https://archive.org/download/VirusFukkatsuNoHi1980/Virus_Fukkatsu_no_hi.mp4
 #EXTINF:-1 tvg-id="ia-Virus_Fukkatsu_no_hi" tvg-name="Virus (復活の日 - Fukkatsu no hi) (1980)" tvg-logo="https://archive.org/services/img/Virus_Fukkatsu_no_hi" group-title="Domínio Público · Clássicos",Virus (復活の日 - Fukkatsu no hi) (1980)
-https://archive.org/download/Virus_Fukkatsu_no_hi/virus-4of7.mp4
+https://archive.org/download/Virus_Fukkatsu_no_hi/virus-1of7.mp4
 #EXTINF:-1 tvg-id="ia-VoyagetothePlanetofPrehistoricWomen" tvg-name="Voyage to the Planet of Prehistoric Women (1967)" tvg-logo="https://archive.org/services/img/VoyagetothePlanetofPrehistoricWomen" group-title="Domínio Público · Ficção científica",Voyage to the Planet of Prehistoric Women (1967)
 https://archive.org/download/VoyagetothePlanetofPrehistoricWomen/VoyagetothePlanetofPrehistoricWomen.mp4
-#EXTINF:-1 tvg-id="ia-VoyageToThePlanetOfPrehistoricWomen_20130813" tvg-name="Voyage To The Planet Of Prehistoric Women" tvg-logo="https://archive.org/services/img/VoyageToThePlanetOfPrehistoricWomen_20130813" group-title="Domínio Público · Ficção científica",Voyage To The Planet Of Prehistoric Women
-https://archive.org/download/VoyageToThePlanetOfPrehistoricWomen_20130813/Voyage%20to%20the%20Planet%20of%20Prehistoric%20Women.mp4
 #EXTINF:-1 tvg-id="ia-war_babies" tvg-name="War Babies (1932)" tvg-logo="https://archive.org/services/img/war_babies" group-title="Domínio Público · Comédia",War Babies (1932)
 https://archive.org/download/war_babies/war_babies.mp4
 #EXTINF:-1 tvg-id="ia-war_dogs" tvg-name="War Dogs (1942)" tvg-logo="https://archive.org/services/img/war_dogs" group-title="Domínio Público · Guerra",War Dogs (1942)
