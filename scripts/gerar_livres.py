@@ -18,7 +18,7 @@ FILMES = [
     ("Sintel", "sintel", 2010, "Animação"),
     ("Tears of Steel", "tears of steel", 2012, "Ficção científica"),
     ("Cosmos Laundromat", "cosmos laundromat", 2015, "Animação"),
-    ("Glass Half", "glass half", 2015, "Animação"),
+    ("Glass Half", "glass half blender", 2015, "Animação"),
     ("Caminandes 1: Llama Drama", "caminandes llama drama", 2013, "Animação"),
     ("Caminandes 2: Gran Dillama", "caminandes gran dillama", 2013, "Animação"),
     ("Caminandes 3: Llamigos", "caminandes llamigos", 2016, "Animação"),
