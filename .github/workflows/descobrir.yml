@@ -1,0 +1,10 @@
+name: Descobrir (manual)
+on:
+  push:
+    paths: ["scripts/descobrir_pt.py"]
+jobs:
+  ver:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/descobrir_pt.py
