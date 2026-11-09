@@ -19,6 +19,15 @@ GRUPOS = {  # categoria do iptv-org → grupo no app
     "outdoor": "Documentários", "science": "Documentários", "business": "Notícias", "weather": "Notícias",
     "auto": "Variedades", "family": "Variedades", "shop": None, "xxx": None,
 }
+# Marcas de canais PAGOS (TV por assinatura): sinal na internet sem login quase sempre é retransmissão sem autorização.
+PAGOS = re.compile(r"telecine|espn|eurosport|dazn|\btnt\b|\baxn\b|warner|\btbs\b|cinecanal|\bsony\b|\bamc\b|\bhbo|megapix|premiere|sportv|combate|"
+                   r"universal|discovery|history|\ba&e\b|\bfox\b|star channel|cartoon network|disney|nat ?geo|\btlc\b|\bgnt\b|multishow|\bviva\b|"
+                   r"canal brasil|\bspace\b|film ?& ?arts|eurochannel|band ?sports|globo|gloob|\boff\b|bis\b|paramount network|lifetime|e! |"
+                   r"\bmtv\b(?!.*pluto)|nickelodeon(?!.*pluto)|comedy central(?! pluto)|\bcnn\b|bloomberg|\bdtv\b", re.I)
+# Canais gratuitos com anúncios (FAST), que os próprios donos liberam
+FAST = re.compile(r"pluto|samsung|rakuten|fifa\+|red bull|moviesphere|cazetv|runtime|plex|xumo|tcl ?channel|lg channels|\bfast\b", re.I)
+PAISES_PT = {"BR", "PT", "AO", "MZ", "CV", "ST", "GW", "TL"}
+
 ORDEM = ["Abertos", "Notícias", "Esportes", "Séries e novelas 24h", "Filmes 24h", "Infantil", "Variedades", "Documentários",
          "Cultura", "Educativos", "Música", "Públicos e legislativos", "Religiosos", "Outros"]
 
@@ -56,7 +65,10 @@ def main():
         c = canais.get(s.get("channel") or "")
         if not c or c.get("is_nsfw") or c.get("closed"):
             continue
-        if c.get("country") != "BR" and c["id"] not in por:
+        nome0 = (s.get("title") or c.get("name") or "") + " " + " ".join(c.get("alt_names") or []) + " " + (c.get("network") or "")
+        if PAGOS.search(nome0) and not FAST.search(nome0):
+            continue
+        if c.get("country") not in PAISES_PT and not (c["id"] in por and FAST.search(nome0)):
             continue
         cats = c.get("categories") or []
         if any(GRUPOS.get(k, "x") is None for k in cats):
