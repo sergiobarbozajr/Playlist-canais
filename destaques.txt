@@ -1,0 +1,3 @@
+# Destaques fixos da fileira "Novidades da semana" no LumeStarTV.
+# Um título (igual ao da lista) ou endereço do vídeo por linha. Linhas com # são ignoradas.
+# Ex.: Sintel (2010)
