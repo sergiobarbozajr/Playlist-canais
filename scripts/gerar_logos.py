@@ -9,6 +9,7 @@ import json, re, sys, unicodedata, urllib.request
 UA = {"User-Agent": "playlist-canais/1.0"}
 PAISES = {"BR", "PT", "US"}
 API = "https://iptv-org.github.io/api/"
+GENERICOS = {"tv", "canal", "rede", "radio", "the", "tele", "web", "net", "rtp", "sic", "my", "top", "mais", "novo", "nova"}
 
 def get(nome):
     with urllib.request.urlopen(urllib.request.Request(API + nome, headers=UA), timeout=120) as r:
@@ -34,7 +35,7 @@ def main():
         area = (l.get("width") or 0) * (l.get("height") or 0)
         if cid not in melhor or area > melhor[cid][0]:
             melhor[cid] = (area, url)
-    saida, n = {}, 0
+    saida, n, marcas = {}, 0, {}
     # Brasil primeiro: em nome repetido, vence o canal brasileiro
     ordem = sorted(canais, key=lambda c: (c.get("country") != "BR", c.get("country") != "PT"))
     for c in ordem:
@@ -47,6 +48,13 @@ def main():
             k = chave(nome)
             if len(k) >= 2 and k not in saida:
                 saida[k] = url; n += 1
+            # marca principal ("SBT Nacional" → "sbt"), só para canais do Brasil e de Portugal
+            primeira = chave(nome.split()[0]) if nome.split() else ""
+            if c.get("country") in ("BR", "PT") and len(primeira) >= 3 and primeira not in GENERICOS and primeira not in marcas:
+                marcas[primeira] = url
+    for k, url in marcas.items():
+        if k not in saida:
+            saida[k] = url; n += 1
     with open("logos.json", "w", encoding="utf-8") as f:
         json.dump(saida, f, ensure_ascii=False, separators=(",", ":"))
     print(f"canais: {len(canais)} · logos de canais: {len(melhor)} · nomes no arquivo: {n}")
