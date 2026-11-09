@@ -26,9 +26,11 @@ jobs:
         run: python3 scripts/gerar_logos.py
       - name: Gerar os canais do Brasil (testados)
         run: python3 scripts/gerar_canais.py
+      - name: Gerar filmes e séries em português (legais)
+        run: python3 scripts/gerar_portugues.py
       - name: Salvar no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898599+github-actions[bot]@users.noreply.github.com"
-          git add filmes-dominio-publico.m3u8 series-dominio-publico.m3u8 logos.json canais-brasil.m3u8
+          git add filmes-dominio-publico.m3u8 series-dominio-publico.m3u8 logos.json canais-brasil.m3u8 portugues.m3u8
           git diff --cached --quiet || (git commit -m "Atualiza listas de domínio público e logos de canais" && git push)
