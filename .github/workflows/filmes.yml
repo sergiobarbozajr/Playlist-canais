@@ -1,4 +1,4 @@
-name: Listas de filmes e séries de domínio público
+name: Listas de filmes e séries de domínio público e logos de canais
 
 on:
   workflow_dispatch:
@@ -22,9 +22,11 @@ jobs:
         run: python3 scripts/gerar_filmes.py 600
       - name: Gerar a lista de séries
         run: python3 scripts/gerar_series.py 700
+      - name: Gerar os logos de canais
+        run: python3 scripts/gerar_logos.py
       - name: Salvar no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898599+github-actions[bot]@users.noreply.github.com"
-          git add filmes-dominio-publico.m3u8 series-dominio-publico.m3u8
-          git diff --cached --quiet || (git commit -m "Atualiza listas de filmes e séries de domínio público" && git push)
+          git add filmes-dominio-publico.m3u8 series-dominio-publico.m3u8 logos.json
+          git diff --cached --quiet || (git commit -m "Atualiza listas de domínio público e logos de canais" && git push)
