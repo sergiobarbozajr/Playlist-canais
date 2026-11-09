@@ -73,7 +73,7 @@ def main():
         cats = c.get("categories") or []
         if any(GRUPOS.get(k, "x") is None for k in cats):
             continue
-        g = next((GRUPOS[k] for k in cats if GRUPOS.get(k)), "Outros")
+        g = next((GRUPOS[k] for k in cats if GRUPOS.get(k)), "Abertos")
         nome = s.get("title") or c.get("name")
         cand.append((g, nome, c, s))
     print(f"candidatos: {len(cand)}")
