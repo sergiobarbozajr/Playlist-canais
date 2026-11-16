@@ -1,6 +1,12 @@
 {
- "atualizado": "2026-11-09",
+ "atualizado": "2026-11-16",
  "titulos": [
+  {
+   "t": "Jack and the Beanstalk (1952)",
+   "u": "https://archive.org/download/jack_and_the_beanstalk_ipod/jackandthebeanstalk.mp4",
+   "d": "2026-11-16",
+   "lista": "filmes-dominio-publico.m3u8"
+  },
   {
    "t": "Big Buck Bunny (2008)",
    "u": "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
